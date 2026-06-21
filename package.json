@@ -1,0 +1,1 @@
+{ "name":"cruz-control-site","type":"module","private":true,"scripts":{"build":"node build.mjs"} }
