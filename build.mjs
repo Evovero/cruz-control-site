@@ -30,11 +30,7 @@ function localBusinessSchema(extra={}){
 function header(){
   const servMenu = services.map(s=>`<a href="/${s.slug}/">${esc(s.title)}</a>`).join('');
   const areaMenu = locations.filter(l=>l.tier<=2).map(l=>`<a href="/${l.slug}/">${esc(l.town)}</a>`).join('');
-  return `<div class="topbar"><div class="container">
-    <span>${esc(addr)} · ${esc(biz.hours)}</span>
-    <span>Free Estimates · <a href="${biz.phoneHref}">${esc(biz.phone)}</a></span>
-  </div></div>
-  <header class="nav"><div class="container">
+  return `<header class="nav"><div class="container">
     <a class="brand" href="/"><img class="logo-img" src="/logo.png" alt="${esc(biz.name)} logo" width="56" height="56"></a>
     <nav><ul class="menu">
       <li><a href="/">Home</a></li>
@@ -44,7 +40,7 @@ function header(){
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/contact/">Contact</a></li>
     </ul></nav>
-    <div class="nav-cta"><span class="nav-call">${esc(biz.phone)}</span><a class="btn btn--primary" href="/contact/">Free Estimate</a></div>
+    <div class="nav-cta"><a class="btn btn--primary nav-phone" href="${biz.phoneHref}">&#9742; ${esc(biz.phone)}</a></div>
   </div></header>`;
 }
 
@@ -77,6 +73,8 @@ function layout({title,desc,slug,body,schema=''}){
 <meta property="og:type" content="website"><meta property="og:url" content="${url}">
 <meta property="og:image" content="${biz.domain}/logo.png">
 <link rel="icon" type="image/png" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">${localBusinessSchema()}</script>
 ${schema?`<script type="application/ld+json">${schema}</script>`:''}
@@ -84,23 +82,28 @@ ${schema?`<script type="application/ld+json">${schema}</script>`:''}
 ${header()}
 ${body}
 ${footer()}
+<script>document.addEventListener('input',function(e){if(e.target&&e.target.type==='tel'){var v=e.target.value.replace(/\\D/g,'').slice(0,10),p='';if(v.length>6)p='('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6);else if(v.length>3)p='('+v.slice(0,3)+') '+v.slice(3);else if(v.length>0)p='('+v;e.target.value=p;}});</script>
 </body></html>`;
 }
 
 /* ---------- reusable blocks ---------- */
 const estimateForm = (heading="Request a Free Estimate")=>`
 <form class="formwrap" name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/?ok=1">
-  <input type="hidden" name="form-name" value="estimate"><p style="display:none"><label>Don't fill <input name="bot-field"></label></p>
-  <h3>${esc(heading)}</h3><p class="lead" style="font-size:.95rem">No obligation. We'll get back to you fast.</p>
-  <div class="field"><label>Your Name</label><input name="name" required></div>
-  <div class="field"><label>Phone*</label><input name="phone" type="tel" required></div>
-  <div class="field"><label>Email*</label><input name="email" type="email" required></div>
-  <div class="field"><label>Project Description*</label><textarea name="project" required></textarea></div>
-  <div class="field"><label>How can we contact you?</label><div class="checkrow">
-    <label><input type="checkbox" name="contact" value="Call">Call</label>
-    <label><input type="checkbox" name="contact" value="Text">Text</label>
-    <label><input type="checkbox" name="contact" value="Email">Email</label></div></div>
-  <button class="btn btn--primary" type="submit" style="width:100%">Request Estimate</button>
+  <input type="hidden" name="form-name" value="estimate"><p class="hp"><label>Don't fill <input name="bot-field"></label></p>
+  <h3>${esc(heading)}</h3><p class="formsub">Fill out the form and we'll reach out shortly to schedule it.</p>
+  <div class="frow">
+    <div class="field"><label>First Name*</label><input name="first_name" required></div>
+    <div class="field"><label>Last Name*</label><input name="last_name" required></div>
+  </div>
+  <div class="field"><label>Phone*</label><input name="phone" type="tel" inputmode="tel" placeholder="(808) 555-1234" required></div>
+  <div class="field"><label>Email <span class="opt">(only if you'd like email contact)</span></label><input name="email" type="email" placeholder="you@email.com"></div>
+  <div class="field"><label>How would you like to be contacted?</label><div class="checkrow">
+    <label><input type="checkbox" name="contact" value="Call"> Call</label>
+    <label><input type="checkbox" name="contact" value="Text"> Text</label>
+    <label><input type="checkbox" name="contact" value="Email"> Email</label></div></div>
+  <div class="field"><label>What do you need?*</label><textarea name="project" placeholder="Tell us about your project (type of work, size, timing)" required></textarea></div>
+  <button class="btn btn--primary" type="submit" style="width:100%">Request My Estimate</button>
+  <p class="formdisc">No pressure, no spam. We'll reach out the way you prefer. By submitting, you agree to be contacted about your request. We never sell your info.</p>
 </form>`;
 
 const ctaBand = ()=>`<section class="section section--ocean"><div class="container center">
@@ -113,7 +116,7 @@ const ctaBand = ()=>`<section class="section section--ocean"><div class="contain
 
 const IMG='/img/';
 const pic=(file,alt)=>`<img class="ph" src="${IMG}${file}" alt="${esc(alt)}" loading="lazy">`;
-const heroBg=(file)=>`<div class="imgslot" style="background-image:linear-gradient(120deg,rgba(11,61,82,.84),rgba(17,83,110,.66)),url(${IMG}${file});background-size:cover;background-position:center"></div>`;
+const heroBg=(file)=>`<div class="imgslot" style="background-image:linear-gradient(90deg,rgba(15,22,27,.82),rgba(15,22,27,.45) 58%,rgba(15,22,27,.22)),url(${IMG}${file});background-size:cover;background-position:center 38%"></div>`;
 // rotation pool for location pages (unique-ish per town)
 const pool=['deck-view-1.jpg','deck-house.jpg','steps-feature.jpg','retaining-deck.jpg','deck-retaining.jpg','deck-view-2.jpg','deck-patio.jpg','pool-shell-1.jpg','pool-shell-2.jpg','finished-floor.jpg','tile-patio.jpg','concrete-steps.jpg','fresh-slab.jpg','slab-pour-2.jpg','big-pour.jpg'];
 const serviceImg={
@@ -128,12 +131,29 @@ const serviceImg={
 function home(){
   const serviceCards = services.map(s=>`<div class="card">${pic(serviceImg[s.slug].card, s.title+' on Oahu by Cruz Control Concrete Hawaii')}<div class="body"><h3>${esc(s.title)}</h3><p>${esc(s.blurb)}</p><a class="more" href="/${s.slug}/">Learn more →</a></div></div>`).join('');
   const body = `
-  <section class="hero">${heroBg('crew-night-pour.jpg')}<div class="container">
-    <h1>Oahu's Trusted Concrete Contractor</h1>
-    <p>Cruz Control Concrete Hawaii builds durable, high-quality residential concrete: driveways, patios, slabs, and custom flatwork. Based in Waianae, serving all of Oahu.</p>
-    <div class="actions"><a class="btn btn--primary" href="/contact/">Get a Free Estimate</a><a class="btn btn--ghost" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
-    <div class="trust"><span><b>${esc(biz.yearsExp)}</b> years experience</span><span><b>★★★★★</b> homeowner-rated</span><span><b>Free</b> estimates</span><span><b>All</b> of Oahu</span></div>
+  <section class="hero hero--full">${heroBg('driveway-prep.jpg')}<div class="container">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow--sun">Serving Waianae &amp; All of Oahu</p>
+      <h1>Oahu's Trusted Concrete Contractor</h1>
+      <p>Durable driveways, patios, slabs, and custom flatwork, built for Hawaii's climate. Call or request a free, no-obligation estimate today.</p>
+      <div class="actions"><a class="btn btn--primary" href="#estimate">Free Estimate &rarr;</a><a class="btn btn--white" href="${biz.phoneHref}">&#9742; Call ${esc(biz.phone)}</a></div>
+    </div>
   </div></section>
+
+  <section class="section--stats"><div class="container"><div class="stats">
+    <div class="stat"><b>${esc(biz.yearsExp)}</b><span>Years Experience</span></div>
+    <div class="stat"><b>5.0&#9733;</b><span>Homeowner Rated</span></div>
+    <div class="stat"><b>Free</b><span>On-Site Estimates</span></div>
+    <div class="stat"><b>All&nbsp;Oahu</b><span>Service Area</span></div>
+  </div></div></section>
+
+  <section class="section section--sand" id="estimate"><div class="container"><div class="estimate-grid">
+    <div><p class="eyebrow">Free Estimate</p><h2>Tell us about your project</h2>
+      <p class="lead">We'll get back to you fast with a free, no-obligation estimate. No pressure and no spam, just honest help from a local Oahu crew with ${esc(biz.yearsExp)} years of concrete experience.</p>
+      ${pic('deck-patio.jpg','Finished concrete patio on Oahu by Cruz Control Concrete Hawaii')}
+    </div>
+    ${estimateForm('Request a Free Estimate')}
+  </div></div></section>
 
   <section class="section"><div class="container split">
     <div><p class="eyebrow">Concrete Contractor on Oahu</p><h2>Built for Hawaii's climate, soil, and salt air</h2>
@@ -148,11 +168,20 @@ function home(){
     <div class="grid grid-3 mt">${serviceCards}</div>
   </div></section>
 
-  <section class="section"><div class="container split">
-    ${estimateForm()}
-    <div><p class="eyebrow">Why Homeowners Choose Us</p><h2>Honest work that holds up</h2>
-    <p class="lead">Choosing the right concrete contractor changes how your project turns out. We show up on time, prep every pour for Oahu's conditions, and finish clean.</p>
-    <ul class="checks"><li>Free, no-obligation estimates</li><li>12+ years of residential concrete</li><li>Serving Waianae and all of Oahu</li><li>Stamped, colored & decorative options</li></ul></div>
+  <section class="section" id="work"><div class="container">
+    <div class="center"><p class="eyebrow">Our Work</p><h2>Recent Projects Across Oahu</h2><p class="lead" style="margin:8px auto 0">Real driveways, patios, and slabs from our crew.</p></div>
+    <div class="gallery mt">
+      ${['driveway-prep.jpg','deck-view-1.jpg','deck-patio.jpg','breeze-block-wall.jpg','fresh-slab.jpg','steps-feature.jpg','retaining-deck.jpg'].map(f=>`<img src="/img/${f}" alt="Cruz Control Concrete Hawaii project on Oahu" loading="lazy">`).join('')}
+    </div>
+  </div></section>
+
+  <section class="section section--sand"><div class="container">
+    <div class="center"><p class="eyebrow">Reviews</p><h2>What Oahu Homeowners Say</h2></div>
+    <div class="quotes mt">
+      <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Cruz Control Concrete transformed our driveway with flawless craftsmanship and timely service. Highly recommend for any Oahu homeowner!"</p><div class="who"><span class="av">M</span><div>Mia K.<small>Oahu homeowner</small></div></div></div>
+      <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Professional, reliable, and exceptional work from start to finish. The crew was clean, on time, and the result speaks for itself."</p><div class="who"><span class="av">L</span><div>Lani K.<small>Oahu homeowner</small></div></div></div>
+      <div class="quote" style="background:linear-gradient(135deg,var(--ocean),var(--ocean-2));color:#fff;display:flex;flex-direction:column;justify-content:center;gap:6px"><h3 style="color:#fff;margin:0">Your project could be next.</h3><p style="color:#cfe3ea">Join the Oahu homeowners who trust Cruz Control with their concrete.</p><a class="btn btn--primary" href="/contact/">Get a Free Estimate</a></div>
+    </div>
   </div></section>
 
   ${ctaBand()}`;
