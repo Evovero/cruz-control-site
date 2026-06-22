@@ -250,10 +250,70 @@ function contact(){
   return layout({title:`Contact | Free Estimate | ${biz.name}`,desc:`Contact Cruz Control Concrete Hawaii for a free concrete estimate on Oahu. Call ${biz.phone} or request online.`,slug:'contact',body});
 }
 
+/* ---------- blog ---------- */
+const POSTS_DIR='posts';
+const slugify=s=>String(s).toLowerCase().replace(/<[^>]+>/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+function parsePost(file){
+  const raw=readFileSync(join(POSTS_DIR,file),'utf8');
+  const m=raw.match(/^---\s*([\s\S]*?)\s*---\s*([\s\S]*)$/);
+  if(!m) return null;
+  const fm={}; m[1].split('\n').forEach(line=>{const i=line.indexOf(':'); if(i>0){const k=line.slice(0,i).trim(); const v=line.slice(i+1).trim().replace(/^["']|["']$/g,''); fm[k]=v;}});
+  fm.body=m[2].trim();
+  if(!fm.slug) fm.slug=slugify(fm.title||file.replace(/\.md$/,''));
+  return fm;
+}
+function readPosts(){
+  if(!existsSync(POSTS_DIR)) return [];
+  return readdirSync(POSTS_DIR).filter(f=>f.endsWith('.md')).map(parsePost).filter(Boolean)
+    .sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+}
+function withTocIds(body){
+  const items=[];
+  const out=body.replace(/<h2(\s[^>]*)?>([\s\S]*?)<\/h2>/g,(mm,attrs,inner)=>{
+    const id=slugify(inner); items.push({id,text:inner.replace(/<[^>]+>/g,'')});
+    return `<h2 id="${id}"${attrs||''}>${inner}</h2>`;
+  });
+  const toc=items.length>=3?`<nav class="toc"><strong>On this page</strong><ul>${items.map(i=>`<li><a href="#${i.id}">${esc(i.text)}</a></li>`).join('')}</ul></nav>`:'';
+  return {body:out,toc};
+}
+function faqSchema(body){
+  try{
+    const idx=body.search(/<h2[^>]*>[^<]*(frequently asked|faq)/i);
+    if(idx<0) return null;
+    const qs=[...body.slice(idx).matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/g)];
+    if(!qs.length) return null;
+    return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":qs.map(q=>({"@type":"Question","name":q[1].replace(/<[^>]+>/g,'').trim(),"acceptedAnswer":{"@type":"Answer","text":q[2].replace(/<[^>]+>/g,'').trim()}}))};
+  }catch(e){return null;}
+}
+function fmtDate(d){ try{return new Date(d+'T12:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}catch(e){return d;} }
+function postPage(p){
+  const {body,toc}=withTocIds(p.body);
+  const hero=p.hero||'concrete-steps.jpg';
+  const url=`${biz.domain}/blog/${p.slug}/`;
+  const blogSchema={"@context":"https://schema.org","@type":"BlogPosting","headline":p.title,"description":p.description||'',"datePublished":p.date,"dateModified":p.date,"image":`${biz.domain}/img/${hero}`,"author":{"@type":"Organization","name":biz.name},"publisher":{"@type":"Organization","name":biz.name,"logo":{"@type":"ImageObject","url":`${biz.domain}/logo.png`}},"mainEntityOfPage":{"@type":"WebPage","@id":url}};
+  const faq=faqSchema(body);
+  const schema=JSON.stringify(faq?[blogSchema,faq]:blogSchema);
+  const css=`<style>.post-body{font-size:1.06rem}.post-body h2{margin:34px 0 12px}.post-body h3{margin:22px 0 8px}.post-body p{margin:0 0 16px}.post-body ul,.post-body ol{margin:0 0 16px 22px}.post-body li{margin:6px 0}.post-body a{font-weight:600}.toc{background:var(--sand);border-radius:12px;padding:18px 22px;margin:0 0 28px}.toc ul{margin:8px 0 0 18px}.toc li{margin:4px 0}</style>`;
+  const bodyHtml=`${css}
+  <section class="hero">${heroBg(hero)}<div class="container">
+    <p class="eyebrow" style="color:#9fd4dd">Concrete Blog</p><h1>${esc(p.title)}</h1>
+    <p>${fmtDate(p.date)} &middot; ${esc(biz.name)}</p>
+  </div></section>
+  <section class="section"><div class="container" style="max-width:840px">
+    ${toc}
+    <div class="post-body">${body}</div>
+    <div class="mt" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn--primary" href="/contact/">Get a Free Estimate</a><a class="btn btn--dark" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
+  </div></section>${ctaBand()}`;
+  return layout({title:`${p.title} | ${biz.name}`,desc:p.description||p.title,slug:`blog/${p.slug}`,body:bodyHtml,schema});
+}
 function blogIndex(){
+  const posts=readPosts();
+  const list = posts.length
+    ? `<div class="grid grid-2">${posts.map(p=>`<div class="card">${pic(p.hero||'concrete-steps.jpg',esc(p.title))}<div class="body"><h3><a href="/blog/${p.slug}/">${esc(p.title)}</a></h3><p>${esc(p.description||'')}</p><a class="more" href="/blog/${p.slug}/">Read more &rarr;</a></div></div>`).join('')}</div>`
+    : `<div class="center"><p class="lead" style="margin:0 auto">New posts are coming soon. Check back for concrete tips from the Cruz Control crew.</p></div>`;
   const body=`<section class="hero">${heroBg('concrete-steps.jpg')}<div class="container"><h1>Concrete Tips & Insights</h1><p>Guides and advice on concrete driveways, patios, slabs, and caring for concrete in Hawaii.</p></div></section>
-  <section class="section"><div class="container center"><p class="lead" style="margin:0 auto">New posts are coming soon. Check back for concrete tips from the Cruz Control crew.</p></div></section>${ctaBand()}`;
-  return layout({title:`Blog | ${biz.name}`,desc:`Concrete tips and insights from Cruz Control Concrete Hawaii.`,slug:'blog',body});
+  <section class="section"><div class="container">${list}</div></section>${ctaBand()}`;
+  return layout({title:`Concrete Blog | ${biz.name}`,desc:`Concrete tips and advice from Cruz Control Concrete Hawaii, serving Waianae and all of Oahu.`,slug:'blog',body});
 }
 
 /* ---------- write ---------- */
@@ -275,11 +335,14 @@ page('service-areas', areasHub());
 locations.forEach((l,i)=>page(l.slug, locationPage(l,i)));
 page('about-us', about());
 page('contact', contact());
+const posts = readPosts();
+posts.forEach(p=>page('blog/'+p.slug, postPage(p)));
 page('blog', blogIndex());
 
 // sitemap + robots
 const urls = ['', 'concrete-services','service-areas','about-us','contact','blog',
-  ...services.map(s=>s.slug), ...locations.map(l=>l.slug)];
+  ...services.map(s=>s.slug), ...locations.map(l=>l.slug),
+  ...posts.map(p=>'blog/'+p.slug)];
 writeFileSync(join(OUT,'sitemap.xml'),
 `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">\n`+
 urls.map(u=>`<url><loc>${biz.domain}/${u?u+'/':''}</loc></url>`).join('\n')+`\n</urlset>`);
