@@ -1,4 +1,5 @@
 import { biz, services, locations } from './src/data/site.mjs';
+import { serviceDetail, locationDetail } from './src/data/content.mjs';
 import { mkdirSync, writeFileSync, cpSync, existsSync, rmSync, readdirSync, statSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -21,10 +22,32 @@ function localBusinessSchema(extra={}){
     "address":{"@type":"PostalAddress","streetAddress":biz.street,"addressLocality":biz.city,"addressRegion":biz.state,"postalCode":biz.zip,"addressCountry":"US"},
     "areaServed":locations.map(l=>({"@type":"City","name":l.town})),
     "openingHours":"Mo-Sa 08:00-23:00",
+    "geo":{"@type":"GeoCoordinates","latitude":21.4447,"longitude":-158.1861},
     "priceRange":"$$"
   };
   if(biz.gbpCidUrl) s.hasMap = biz.gbpCidUrl;
   return JSON.stringify({...s, ...extra});
+}
+
+function breadcrumbSchema(items){
+  return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":
+    items.map((it,i)=>({"@type":"ListItem","position":i+1,"name":it.name,"item":`${biz.domain}/${it.slug?it.slug+'/':''}`}))};
+}
+function faqListSchema(faqs){
+  return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":
+    faqs.map(f=>({"@type":"Question","name":f.q,"acceptedAnswer":{"@type":"Answer","text":f.a}}))};
+}
+function faqSection(faqs, heading="Frequently Asked Questions"){
+  return `<section class="section"><div class="container" style="max-width:900px">
+    <div class="center"><p class="eyebrow">FAQ</p><h2>${esc(heading)}</h2></div>
+    <div class="faq-list mt">${faqs.map(f=>`<details class="faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</div>
+  </div></section>`;
+}
+function processSection(steps, heading="How We Work"){
+  return `<section class="section section--sand"><div class="container">
+    <div class="center"><p class="eyebrow">Our Process</p><h2>${esc(heading)}</h2></div>
+    <div class="steps mt">${steps.map((st,i)=>`<div class="step"><span class="step-num">${i+1}</span><div><h3>${esc(st.t)}</h3><p>${esc(st.d)}</p></div></div>`).join('')}</div>
+  </div></section>`;
 }
 
 function header(){
@@ -185,38 +208,46 @@ function home(){
   </div></section>
 
   ${ctaBand()}`;
-  return layout({title:`Concrete Contractor Oahu | Driveways, Patios & Slabs | ${biz.name}`,desc:`Top-rated concrete contractor on Oahu. Driveways, patios, slabs & custom concrete. Based in Waianae, serving all of Oahu. Call ${biz.phone} for a free estimate.`,slug:'',body});
+  return layout({title:`Oahu Concrete Contractor | Cruz Control Concrete Hawaii`,desc:`Concrete driveways, patios, slabs and custom finishes across Oahu. Based in Waianae with 12+ years of island experience. Free estimates: ${biz.phone}.`,slug:'',body});
 }
 
-const serviceContent = {
-  "concrete-driveway-contractor":{intro:"A concrete driveway is one of the best investments you can make in your home. We build driveways that handle heavy vehicle traffic, resist cracking, and lift your curb appeal.",points:["New driveway installation with proper grading and base","Full driveway replacement and removal","Stamped, colored, and broom-finish options","Drainage and expansion control for Oahu's climate"]},
-  "concrete-patio-contractor":{intro:"A well-built concrete patio extends your living space outdoors. We design and install patios that are comfortable, durable, and built to handle year-round island use.",points:["Custom patio design and layout","Decorative and stamped concrete patios","Patio upgrades and replacements","Proper drainage and finishing"]},
-  "concrete-slab-contractor":{intro:"A solid slab is the foundation of any successful project. We pour level, long-lasting slabs for homes, additions, garages, sheds, and outdoor living areas.",points:["Home additions and extensions","Garage, carport, and shed slabs","Outdoor kitchens and covered patios","Reinforcement and control joints for strength"]},
-  "custom-concrete-contractor":{intro:"Transform ordinary surfaces into striking features. Our decorative and custom concrete combines high-end looks with the durability concrete is known for.",points:["Stamped concrete (stone, brick, tile looks)","Colored and integrally tinted concrete","Textured and broom finishes","Borders, patterns, and design accents"]},
-  "masonry-contractor":{intro:"Beyond flatwork, we handle masonry and concrete repair for a complete solution, from retaining walls to restoration and demolition.",points:["Block work and retaining walls","Concrete repair and resurfacing","Demolition and removal","Integrated concrete + masonry projects"]},
-};
 function servicePage(s){
-  const c = serviceContent[s.slug];
+  const c = serviceDetail[s.slug];
   const si = serviceImg[s.slug];
-  const others = services.filter(x=>x.slug!==s.slug).map(x=>`<a href="/${x.slug}/">${esc(x.title)}</a>`).join(' · ');
-  const schema = JSON.stringify({"@context":"https://schema.org","@type":"Service","serviceType":s.title,"provider":{"@type":"GeneralContractor","name":biz.name},"areaServed":{"@type":"State","name":"Oahu, Hawaii"},"description":c.intro});
+  const others = services.filter(x=>x.slug!==s.slug).map(x=>`<a href="/${x.slug}/">${esc(x.title)}</a>`).join(' &middot; ');
+  const townPills = c.towns.map(t=>{const l=locations.find(x=>x.slug===t);return l?`<a class="pill" href="/${l.slug}/">${esc(l.town)}</a>`:'';}).join('');
+  const included = c.included.map(x=>`<div class="tile"><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join('');
+  const schema = JSON.stringify([
+    {"@context":"https://schema.org","@type":"Service","serviceType":s.title,"url":`${biz.domain}/${s.slug}/`,"provider":{"@type":"GeneralContractor","name":biz.name,"@id":`${biz.domain}/#business`},"areaServed":locations.map(l=>({"@type":"City","name":l.town})),"description":c.intro},
+    faqListSchema(c.faqs),
+    breadcrumbSchema([{name:"Home",slug:""},{name:"Concrete Services",slug:"concrete-services"},{name:s.title,slug:s.slug}])
+  ]);
   const body=`
   <section class="hero">${heroBg(si.hero)}<div class="container">
     <p class="eyebrow" style="color:#9fd4dd">Concrete Services</p><h1>${esc(s.title)} on Oahu</h1>
     <p>${esc(c.intro)}</p>
     <div class="actions"><a class="btn btn--primary" href="/contact/">Free Estimate</a><a class="btn btn--ghost" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
   </div></section>
+  <section class="section"><div class="container">
+    <div class="center"><p class="eyebrow">What's included</p><h2>Professional ${esc(s.title)}</h2></div>
+    <div class="grid grid-3 mt">${included}</div>
+  </div></section>
+  ${processSection(c.process, 'How your project comes together')}
   <section class="section"><div class="container split">
-    <div><p class="eyebrow">What's included</p><h2>Professional ${esc(s.title)}</h2>
-      <p class="lead">As an experienced concrete contractor on Oahu, we handle every step, from site prep to final finish, with attention to detail.</p>
-      <ul class="checks">${c.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
-      <a class="btn btn--dark" href="/service-areas/">Areas we serve →</a>
+    <div><p class="eyebrow">Built for the island</p><h2>${esc(c.local.h2)}</h2>
+      ${c.local.p.map(pp=>`<p class="lead">${esc(pp)}</p>`).join('')}
+      <a class="btn btn--dark" href="/service-areas/">Areas we serve &rarr;</a>
     </div>${pic(si.body, s.title+' project on Oahu by Cruz Control Concrete Hawaii')}</div></section>
+  <section class="section section--sand"><div class="container center">
+    <p class="eyebrow">Where we work</p><h2>${esc(s.nav)} across Oahu</h2>
+    <div class="pills pills--center mt">${townPills}<a class="pill" href="/service-areas/"><b>All areas &rarr;</b></a></div>
+  </div></section>
+  ${faqSection(c.faqs, s.title+': Your Questions Answered')}
   <section class="section section--sand"><div class="container split">${estimateForm(`Get a Free ${s.title} Estimate`)}
     <div><p class="eyebrow">Other services</p><h2>We do it all in concrete</h2><p class="lead">${others}</p>
     <p class="mt">Not sure what you need? Call us at <a href="${biz.phoneHref}">${esc(biz.phone)}</a> and we'll point you the right way.</p></div></div></section>
   ${ctaBand()}`;
-  return layout({title:`${s.title} on Oahu | ${biz.name}`,desc:`${c.intro} Free estimates across Oahu. Call ${biz.phone}.`,slug:s.slug,body,schema});
+  return layout({title:c.metaTitle,desc:c.metaDesc,slug:s.slug,body,schema});
 }
 
 function servicesHub(){
@@ -227,25 +258,41 @@ function servicesHub(){
 }
 
 function locationPage(l,i=0){
+  const c = locationDetail[l.slug];
   const heroFile=pool[i%pool.length], bodyFile=pool[(i+8)%pool.length];
-  const schema =JSON.stringify({"@context":"https://schema.org","@type":"GeneralContractor","name":`${biz.name} — ${l.town}`,"telephone":`+1-${biz.phone}`,"areaServed":{"@type":"City","name":l.town},"url":`${biz.domain}/${l.slug}/`,"parentOrganization":{"@type":"GeneralContractor","name":biz.name}});
-  const servList = services.map(s=>`<li>${esc(s.title)}</li>`).join('');
+  const hoods=c.neighborhoods.map(n=>`<span class="pill pill--static">${esc(n)}</span>`).join('');
+  const highlights=c.highlights.map(h=>`<div class="tile"><h3>${esc(h.t)}</h3><p>${esc(h.d)}</p></div>`).join('');
+  const servList=services.map(sv=>`<li><a href="/${sv.slug}/">${esc(sv.title)}</a></li>`).join('');
+  const nearby=locations.filter(x=>x.tier===l.tier&&x.slug!==l.slug).slice(0,3).map(x=>`<a href="/${x.slug}/">${esc(x.town)}</a>`).join(' &middot; ');
+  const schema=JSON.stringify([
+    {"@context":"https://schema.org","@type":"GeneralContractor","name":biz.name,"telephone":`+1-${biz.phone}`,"areaServed":{"@type":"City","name":l.town},"url":`${biz.domain}/${l.slug}/`,"@id":`${biz.domain}/${l.slug}/#business`,"image":`${biz.domain}/logo.png`},
+    faqListSchema(c.faqs),
+    breadcrumbSchema([{name:"Home",slug:""},{name:"Service Areas",slug:"service-areas"},{name:l.town,slug:l.slug}])
+  ]);
   const body=`
   <section class="hero">${heroBg(heroFile)}<div class="container">
     <p class="eyebrow" style="color:#9fd4dd">Serving ${esc(l.town)}, Oahu</p><h1>Concrete Contractor in ${esc(l.town)}</h1>
-    <p>${esc(l.context)} We bring ${esc(biz.yearsExp)} years of residential concrete experience to ${esc(l.town)} homeowners.</p>
+    <p>${esc(c.intro)}</p>
     <div class="actions"><a class="btn btn--primary" href="/contact/">Free Estimate in ${esc(l.town)}</a><a class="btn btn--ghost" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
   </div></section>
   <section class="section"><div class="container split">
-    <div><p class="eyebrow">Local concrete experts</p><h2>Concrete services in ${esc(l.town)}</h2>
-    <p class="lead">From new driveways to patios and slabs, we deliver durable, clean concrete work built for ${esc(l.town)} and the surrounding area.</p>
-    <ul class="checks">${servList}</ul><a class="btn btn--dark" href="/concrete-services/">All services →</a></div>
+    <div><p class="eyebrow">Local concrete experts</p><h2>Your concrete crew in ${esc(l.town)}</h2>
+    ${c.about.map(pp=>`<p class="lead">${esc(pp)}</p>`).join('')}
+    <div class="pills mt">${hoods}</div></div>
     ${pic(bodyFile,'Concrete project in '+l.town+', Oahu by Cruz Control Concrete Hawaii')}</div></section>
+  <section class="section section--sand"><div class="container split">
+    <div><p class="eyebrow">What we build</p><h2>Concrete services in ${esc(l.town)}</h2>
+      <p class="lead">From new driveways to patios, slabs, and hollow tile walls, every ${esc(l.town)} project gets the same prep-first standard we hold everywhere on Oahu.</p>
+      <ul class="checks checks--links">${servList}</ul>
+      <a class="btn btn--dark" href="/concrete-services/">All services &rarr;</a></div>
+    <div class="tiles-stack">${highlights}</div></div></section>
+  ${faqSection(c.faqs, 'Concrete in '+l.town+': Common Questions')}
   <section class="section section--sand"><div class="container split">${estimateForm(`Free Estimate in ${l.town}`)}
     <div><p class="eyebrow">Why ${esc(l.town)} homeowners call us</p><h2>Reliable, local, built to last</h2>
-    <ul class="checks"><li>Based nearby in Waianae</li><li>Free, no-obligation estimates</li><li>Prep built for local soil and climate</li><li>Clear communication start to finish</li></ul></div></div></section>
+    <ul class="checks"><li>Based nearby in Waianae</li><li>Free, no-obligation estimates</li><li>Prep built for local soil and climate</li><li>Clear communication start to finish</li></ul>
+    <p class="mt"><strong>Nearby areas:</strong> ${nearby} &middot; <a href="/service-areas/">All areas</a></p></div></div></section>
   ${ctaBand()}`;
-  return layout({title:`Concrete Contractor in ${l.town}, Oahu | ${biz.name}`,desc:`Concrete contractor serving ${l.town}, Oahu. Driveways, patios, slabs & custom concrete. Free estimates. Call ${biz.phone}.`,slug:l.slug,body,schema});
+  return layout({title:c.metaTitle,desc:c.metaDesc,slug:l.slug,body,schema});
 }
 
 function areasHub(){
@@ -264,7 +311,7 @@ function about(){
   <section class="section"><div class="container split"><div><p class="eyebrow">Who we are</p><h2>Craftsmanship you can count on</h2>
   <p class="lead">Cruz Control Concrete Hawaii specializes in residential flatwork built for Hawaii's climate and soil. We focus on proper preparation, precise installation, and clean finishing on every job.</p>
   <ul class="checks"><li>${esc(biz.yearsExp)} years of hands-on experience</li><li>Residential flatwork specialists</li><li>Based in Waianae, serving all of Oahu</li><li>Honest recommendations and clear communication</li></ul></div>${pic('deck-house.jpg','Cruz Control Concrete Hawaii finished concrete work on Oahu')}</div></section>${ctaBand()}`;
-  return layout({title:`About | ${biz.name}`,desc:`Learn about Cruz Control Concrete Hawaii, a Waianae-based concrete contractor serving Oahu with ${biz.yearsExp} years of experience.`,slug:'about-us',body});
+  return layout({title:`About Our Waianae Concrete Crew | Cruz Control Concrete`,desc:`Cruz Control Concrete Hawaii is a Waianae based crew pouring driveways, patios and slabs across Oahu for 12+ years. Free estimates: call ${biz.phone}.`,slug:'about-us',body});
 }
 
 function contact(){
@@ -276,7 +323,7 @@ function contact(){
     <strong>Email:</strong> ${esc(biz.email)}<br>
     <strong>Address:</strong> ${esc(addr)}<br>
     <strong>Hours:</strong> ${esc(biz.hours)}</p></div></div></section>`;
-  return layout({title:`Contact | Free Estimate | ${biz.name}`,desc:`Contact Cruz Control Concrete Hawaii for a free concrete estimate on Oahu. Call ${biz.phone} or request online.`,slug:'contact',body});
+  return layout({title:`Contact | Free Estimate | ${biz.name}`,desc:`Request a free concrete estimate on Oahu. Call or text ${biz.phone}, or send the form and we will reach out fast. Serving Waianae and all of Oahu.`,slug:'contact',body});
 }
 
 /* ---------- blog ---------- */
@@ -342,7 +389,7 @@ function blogIndex(){
     : `<div class="center"><p class="lead" style="margin:0 auto">New posts are coming soon. Check back for concrete tips from the Cruz Control crew.</p></div>`;
   const body=`<section class="hero">${heroBg('concrete-steps.jpg')}<div class="container"><h1>Concrete Tips & Insights</h1><p>Guides and advice on concrete driveways, patios, slabs, and caring for concrete in Hawaii.</p></div></section>
   <section class="section"><div class="container">${list}</div></section>${ctaBand()}`;
-  return layout({title:`Concrete Blog | ${biz.name}`,desc:`Concrete tips and advice from Cruz Control Concrete Hawaii, serving Waianae and all of Oahu.`,slug:'blog',body});
+  return layout({title:`Concrete Tips for Oahu Homeowners | Cruz Control Concrete`,desc:`Practical concrete advice for Hawaii homes: driveways, patios, slabs and maintenance, from the Cruz Control crew in Waianae. Free estimates: ${biz.phone}.`,slug:'blog',body});
 }
 
 /* ---------- write ---------- */
@@ -373,7 +420,7 @@ const urls = ['', 'concrete-services','service-areas','about-us','contact','blog
   ...services.map(s=>s.slug), ...locations.map(l=>l.slug),
   ...posts.map(p=>'blog/'+p.slug)];
 writeFileSync(join(OUT,'sitemap.xml'),
-`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">\n`+
+`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`+
 urls.map(u=>`<url><loc>${biz.domain}/${u?u+'/':''}</loc></url>`).join('\n')+`\n</urlset>`);
 writeFileSync(join(OUT,'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${biz.domain}/sitemap.xml\n`);
 

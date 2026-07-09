@@ -187,3 +187,27 @@ footer.foot h4{color:#fff;margin-bottom:14px;font-size:1rem}
   .gallery{grid-template-columns:repeat(2,1fr)}
   .gallery img:first-child{grid-column:span 2;grid-row:auto}
 }
+
+/* ---------- built-out service & location pages (2026-07) ---------- */
+.tile{background:#fff;border:1px solid rgba(35,40,45,.08);border-radius:var(--radius,14px);padding:22px;box-shadow:var(--shadow,0 1px 2px rgba(35,40,45,.05))}
+.tile h3{margin:0 0 8px;font-size:1.05rem}
+.tile p{margin:0;color:var(--gray)}
+.tiles-stack{display:grid;gap:14px;align-content:start}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.step{display:flex;gap:14px;background:#fff;border:1px solid rgba(35,40,45,.08);border-radius:var(--radius,14px);padding:20px}
+.step-num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--ocean);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:var(--display,inherit)}
+.step h3{margin:0 0 6px;font-size:1rem}
+.step p{margin:0;color:var(--gray)}
+.faq-list{display:grid;gap:10px}
+.faq{background:#fff;border:1px solid rgba(35,40,45,.1);border-radius:12px;padding:14px 18px}
+.faq summary{cursor:pointer;font-weight:600;color:var(--char)}
+.faq summary::marker{color:var(--teal)}
+.faq[open]{border-color:var(--teal)}
+.faq p{margin:10px 0 2px;color:var(--gray)}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills--center{justify-content:center}
+.pill{display:inline-block;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid rgba(35,40,45,.14);font-weight:600;font-size:.92rem;text-decoration:none;color:var(--char)}
+a.pill:hover{border-color:var(--teal);color:var(--ocean)}
+.pill--static{background:var(--sand)}
+.checks--links a{font-weight:600}
+@media (max-width:720px){.steps{grid-template-columns:1fr}}
