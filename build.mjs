@@ -85,7 +85,7 @@ function footer(){
   </div></footer>`;
 }
 
-function layout({title,desc,slug,body,schema=''}){
+function layout({title,desc,slug,body,schema='',preloadImg=''}){
   const url = `${biz.domain}/${slug?slug+'/':''}`;
   return `<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -94,8 +94,9 @@ function layout({title,desc,slug,body,schema=''}){
 <link rel="canonical" href="${url}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:type" content="website"><meta property="og:url" content="${url}">
-<meta property="og:image" content="${biz.domain}/logo.png">
+<meta property="og:image" content="${biz.domain}/img/og-image.jpg">
 <link rel="icon" type="image/png" href="/logo.png">
+${preloadImg?`<link rel="preload" as="image" href="${preloadImg}">`:''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
@@ -192,14 +193,22 @@ function home(){
     <div class="grid grid-3 mt">${serviceCards}</div>
   </div></section>
 
-  <section class="section" id="work"><div class="container">
+  <section class="section"><div class="container" style="max-width:900px">
+    <p class="eyebrow">Local Knowledge</p><h2>Concrete built for Oahu, not the mainland</h2>
+    <p class="lead">Concrete lives a harder life on Oahu than it does anywhere on the mainland. Salt air works on exposed reinforcement, tropical UV chews through cheap sealers, and kona storms find every drainage shortcut a crew hoped nobody would notice. The ground changes too, from rocky volcanic soil in the Leeward valleys to coral and sand across the Ewa plain, and each type demands its own preparation before a single yard of concrete arrives. Our <a href="/concrete-driveway-contractor/">driveways</a>, <a href="/concrete-patio-contractor/">patios</a>, and <a href="/concrete-slab-contractor/">slabs</a> are designed around those realities, because we live with them too.</p>
+    <p class="lead">The work that matters most is the work you never see. Honest excavation, compacted base, correct thickness, steel where it belongs, and control joints cut on schedule are what separate concrete that lasts thirty years from concrete that cracks in three. That prep-first standard runs through everything we build, including <a href="/custom-concrete-contractor/">stamped and decorative finishes</a> and the <a href="/masonry-contractor/">hollow tile walls and retaining walls</a> island properties depend on.</p>
+    <p class="lead">We are based in Waianae and work across the whole island: the Leeward coast we call home, <a href="/concrete-contractor-kapolei/">Kapolei</a> and <a href="/concrete-contractor-ewa-beach/">Ewa Beach</a>, central Oahu from <a href="/concrete-contractor-waipahu/">Waipahu</a> to <a href="/concrete-contractor-mililani/">Mililani</a>, and over to <a href="/concrete-contractor-honolulu/">Honolulu</a> and the windward side. Every town we serve has its own page with local details, or see <a href="/service-areas/">all service areas</a>.</p>
+    <p class="lead">Every project starts the same way: a free on-site estimate where we walk the job with you, explain what the ground needs, and put a clear price on it. No pressure, no surprises, and a crew that shows up when the schedule says. Call <a href="${biz.phoneHref}">${esc(biz.phone)}</a> or <a href="/contact/">request your estimate online</a>.</p>
+  </div></section>
+
+  <section class="section section--sand" id="work"><div class="container">
     <div class="center"><p class="eyebrow">Our Work</p><h2>Recent Projects Across Oahu</h2><p class="lead" style="margin:8px auto 0">Real driveways, patios, and slabs from our crew.</p></div>
     <div class="gallery mt">
       ${['driveway-prep.jpg','deck-view-1.jpg','deck-patio.jpg','breeze-block-wall.jpg','fresh-slab.jpg','steps-feature.jpg','retaining-deck.jpg'].map(f=>`<img src="/img/${f}" alt="Cruz Control Concrete Hawaii project on Oahu" loading="lazy">`).join('')}
     </div>
   </div></section>
 
-  <section class="section section--sand"><div class="container">
+  <section class="section"><div class="container">
     <div class="center"><p class="eyebrow">Reviews</p><h2>What Oahu Homeowners Say</h2></div>
     <div class="quotes mt">
       <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Cruz Control Concrete transformed our driveway with flawless craftsmanship and timely service. Highly recommend for any Oahu homeowner!"</p><div class="who"><span class="av">M</span><div>Mia K.<small>Oahu homeowner</small></div></div></div>
@@ -209,7 +218,7 @@ function home(){
   </div></section>
 
   ${ctaBand()}`;
-  return layout({title:`Oahu Concrete Contractor | Cruz Control Concrete Hawaii`,desc:`Concrete driveways, patios, slabs and custom finishes across Oahu. Based in Waianae with 12+ years of island experience. Free estimates: ${biz.phone}.`,slug:'',body});
+  return layout({title:`Oahu Concrete Contractor | Cruz Control Concrete Hawaii`,desc:`Concrete driveways, patios, slabs and custom finishes across Oahu. Based in Waianae with 12+ years of island experience. Free estimates: ${biz.phone}.`,slug:'',body,preloadImg:IMG+'driveway-prep.jpg'});
 }
 
 function servicePage(s){
@@ -248,14 +257,20 @@ function servicePage(s){
     <div><p class="eyebrow">Other services</p><h2>We do it all in concrete</h2><p class="lead">${others}</p>
     <p class="mt">Not sure what you need? Call us at <a href="${biz.phoneHref}">${esc(biz.phone)}</a> and we'll point you the right way.</p></div></div></section>
   ${ctaBand()}`;
-  return layout({title:c.metaTitle,desc:c.metaDesc,slug:s.slug,body,schema});
+  return layout({title:c.metaTitle,desc:c.metaDesc,slug:s.slug,body,schema,preloadImg:IMG+si.hero});
 }
 
 function servicesHub(){
   const cards = services.map(s=>`<div class="card">${pic(serviceImg[s.slug].card, s.title+' on Oahu by Cruz Control Concrete Hawaii')}<div class="body"><h3>${esc(s.title)}</h3><p>${esc(s.blurb)}</p><a class="more" href="/${s.slug}/">Learn more →</a></div></div>`).join('');
   const body=`<section class="hero">${heroBg('deck-view-1.jpg')}<div class="container"><h1>Concrete Services on Oahu</h1><p>Full-service residential concrete flatwork, from driveways and patios to slabs, custom finishes, and masonry.</p><div class="actions"><a class="btn btn--primary" href="/contact/">Free Estimate</a></div></div></section>
-  <section class="section"><div class="container"><div class="grid grid-3">${cards}</div></div></section>${ctaBand()}`;
-  return layout({title:`Concrete Services on Oahu | ${biz.name}`,desc:`Residential concrete services on Oahu: driveways, patios, slabs, custom & decorative concrete, and masonry. Free estimates. Call ${biz.phone}.`,slug:'concrete-services',body});
+  <section class="section"><div class="container" style="max-width:900px">
+    <p class="eyebrow">One crew, start to finish</p><h2>Full-service residential concrete on Oahu</h2>
+    <p class="lead">We handle the complete range of residential concrete work: <a href="/concrete-driveway-contractor/">driveways</a>, <a href="/concrete-patio-contractor/">patios</a>, <a href="/concrete-slab-contractor/">slabs</a>, <a href="/custom-concrete-contractor/">stamped and decorative finishes</a>, and the <a href="/masonry-contractor/">hollow tile and retaining wall work</a> that so many island projects need alongside the flatwork. One estimate, one crew, one schedule, whether the job is a single parking pad or a full driveway, walkway, and wall renewal.</p>
+    <p class="lead">Every service runs on the same prep-first standard. Oahu ground varies block by block, rocky valley soil, coral fill, hillside grades, and the base work underneath the concrete decides how long the surface lasts. We excavate, compact, and verify before we pour, we place steel where the load calls for it, and we cut control joints on schedule instead of when the crew gets around to it.</p>
+    <p class="lead">Projects pair naturally: a new driveway with the property wall beside it, a patio with the seat wall that finishes it, a slab with the steps that reach it. Bundling that work into one project shares the mobilization cost and keeps every finish matched. Tell us everything you are considering at the <a href="/contact/">free estimate</a> and we will price it as one clean job, or call <a href="${biz.phoneHref}">${esc(biz.phone)}</a>.</p>
+  </div></section>
+  <section class="section section--sand"><div class="container"><div class="grid grid-3">${cards}</div></div></section>${ctaBand()}`;
+  return layout({title:`Concrete Services on Oahu | ${biz.name}`,desc:`Residential concrete services on Oahu: driveways, patios, slabs, custom & decorative concrete, and masonry. Free estimates. Call ${biz.phone}.`,slug:'concrete-services',body,preloadImg:IMG+'deck-view-1.jpg'});
 }
 
 function locationPage(l,i=0){
@@ -297,18 +312,25 @@ function locationPage(l,i=0){
     <ul class="checks"><li>Based nearby in Waianae</li><li>Free, no-obligation estimates</li><li>Prep built for local soil and climate</li><li>Clear communication start to finish</li></ul>
     <p class="mt"><strong>Nearby areas:</strong> ${nearby} &middot; <a href="/service-areas/">All areas</a></p></div></div></section>
   ${ctaBand()}`;
-  return layout({title:c.metaTitle,desc:c.metaDesc,slug:l.slug,body,schema});
+  return layout({title:c.metaTitle,desc:c.metaDesc,slug:l.slug,body,schema,preloadImg:IMG+heroFile});
 }
 
 function areasHub(){
   const byTier=t=>locations.filter(l=>l.tier===t).map(l=>`<a href="/${l.slug}/">${esc(l.town)}</a>`).join('');
-  const body=`<section class="hero">${heroBg('deck-view-2.jpg')}<div class="container"><h1>Proudly Serving All of Oahu</h1><p>Based in Waianae, we provide residential concrete services across the island, from the Leeward coast to Honolulu and the windward side.</p><div class="actions"><a class="btn btn--primary" href="/contact/">Free Estimate</a></div></div></section>
+  const body=`<section class="hero">${heroBg('deck-view-2.jpg')}<div class="container"><h1>Concrete Contractor Service Areas on Oahu</h1><p>Based in Waianae, we provide residential concrete services across the island, from the Leeward coast to Honolulu and the windward side. Every town below has its own page with local soil, terrain, and project details.</p><div class="actions"><a class="btn btn--primary" href="/contact/">Free Estimate</a></div></div></section>
   <section class="section"><div class="container">
-    <p class="eyebrow">West / Leeward Coast</p><div class="areas-list">${byTier(1)}</div>
-    <p class="eyebrow mt">Central Oahu</p><div class="areas-list">${byTier(2)}</div>
-    <p class="eyebrow mt">Honolulu & East Side</p><div class="areas-list">${byTier(3)}</div>
+    <p class="eyebrow">West / Leeward Coast</p>
+    <p class="lead" style="margin-bottom:14px">This is home. Our shop sits in Waianae, and the towns of the Leeward coast, from Makaha down through Nanakuli to Kapolei, Ko Olina, and Ewa Beach, are where we pour most weeks. We know this coast's salt exposure, rocky valley soil, and sandy shoreline lots firsthand, and scheduling here is the fastest on the island.</p>
+    <div class="areas-list">${byTier(1)}</div>
+    <p class="eyebrow mt">Central Oahu</p>
+    <p class="lead" style="margin-bottom:14px">Central Oahu's established neighborhoods keep us busy with renewal work: replacing driveways that have served forty years, widening parking for multi-vehicle households, and pouring slabs for additions and ADUs. Waipahu, Pearl City, Aiea, and Mililani each bring their own mix of hillside drainage, association standards, and plateau weather, and each page below covers the specifics.</p>
+    <div class="areas-list">${byTier(2)}</div>
+    <p class="eyebrow mt">Honolulu & East Side</p>
+    <p class="lead" style="margin-bottom:14px">Town and east-side projects run as dedicated crew days, so the drive from Waianae never touches quality or schedule. Honolulu brings tight-access urban lots and wet valley neighborhoods, while Kahala, Hawaii Kai, and windward Kailua lean toward premium decorative work, pool decks, and concrete engineered for serious salt and rain exposure.</p>
+    <div class="areas-list">${byTier(3)}</div>
+    <p class="lead mt">Do not see your neighborhood by name? If it is on Oahu, we likely serve it, the towns above are anchors, not borders. Call <a href="${biz.phoneHref}">${esc(biz.phone)}</a> or <a href="/contact/">request a free estimate</a> and tell us where the project is.</p>
   </div></section>${ctaBand()}`;
-  return layout({title:`Service Areas on Oahu | ${biz.name}`,desc:`Cruz Control Concrete Hawaii serves all of Oahu, including Waianae, Kapolei, Ewa Beach, Honolulu, Kailua and more. Free estimates. Call ${biz.phone}.`,slug:'service-areas',body});
+  return layout({title:`Service Areas on Oahu | ${biz.name}`,desc:`Cruz Control Concrete Hawaii serves all of Oahu, including Waianae, Kapolei, Ewa Beach, Honolulu, Kailua and more. Free estimates. Call ${biz.phone}.`,slug:'service-areas',body,preloadImg:IMG+'deck-view-2.jpg'});
 }
 
 function about(){
@@ -316,7 +338,7 @@ function about(){
   <section class="section"><div class="container split"><div><p class="eyebrow">Who we are</p><h2>Craftsmanship you can count on</h2>
   <p class="lead">Cruz Control Concrete Hawaii specializes in residential flatwork built for Hawaii's climate and soil. We focus on proper preparation, precise installation, and clean finishing on every job.</p>
   <ul class="checks"><li>${esc(biz.yearsExp)} years of hands-on experience</li><li>Residential flatwork specialists</li><li>Based in Waianae, serving all of Oahu</li><li>Honest recommendations and clear communication</li></ul></div>${pic('deck-house.jpg','Cruz Control Concrete Hawaii finished concrete work on Oahu')}</div></section>${ctaBand()}`;
-  return layout({title:`About Our Waianae Concrete Crew | Cruz Control Concrete`,desc:`Cruz Control Concrete Hawaii is a Waianae based crew pouring driveways, patios and slabs across Oahu for 12+ years. Free estimates: call ${biz.phone}.`,slug:'about-us',body});
+  return layout({title:`About Our Waianae Concrete Crew | Cruz Control Concrete`,desc:`Cruz Control Concrete Hawaii is a Waianae based crew pouring driveways, patios and slabs across Oahu for 12+ years. Free estimates: call ${biz.phone}.`,slug:'about-us',body,preloadImg:IMG+'crew-night-pour.jpg'});
 }
 
 function contact(){
@@ -328,7 +350,7 @@ function contact(){
     <strong>Email:</strong> ${esc(biz.email)}<br>
     <strong>Address:</strong> ${esc(addr)}<br>
     <strong>Hours:</strong> ${esc(biz.hours)}</p></div></div></section>`;
-  return layout({title:`Contact | Free Estimate | ${biz.name}`,desc:`Request a free concrete estimate on Oahu. Call or text ${biz.phone}, or send the form and we will reach out fast. Serving Waianae and all of Oahu.`,slug:'contact',body});
+  return layout({title:`Contact | Free Estimate | ${biz.name}`,desc:`Request a free concrete estimate on Oahu. Call or text ${biz.phone}, or send the form and we will reach out fast. Serving Waianae and all of Oahu.`,slug:'contact',body,preloadImg:IMG+'fresh-slab.jpg'});
 }
 
 /* ---------- blog ---------- */
@@ -385,7 +407,7 @@ function postPage(p){
     <div class="post-body">${body}</div>
     <div class="mt" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn--primary" href="/contact/">Get a Free Estimate</a><a class="btn btn--dark" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
   </div></section>${ctaBand()}`;
-  return layout({title:`${p.title} | ${biz.name}`,desc:p.description||p.title,slug:`blog/${p.slug}`,body:bodyHtml,schema});
+  return layout({title:`${p.title} | ${biz.name}`,desc:p.description||p.title,slug:`blog/${p.slug}`,body:bodyHtml,schema,preloadImg:IMG+hero});
 }
 function blogIndex(){
   const posts=readPosts();
@@ -394,7 +416,7 @@ function blogIndex(){
     : `<div class="center"><p class="lead" style="margin:0 auto">New posts are coming soon. Check back for concrete tips from the Cruz Control crew.</p></div>`;
   const body=`<section class="hero">${heroBg('concrete-steps.jpg')}<div class="container"><h1>Concrete Tips & Insights</h1><p>Guides and advice on concrete driveways, patios, slabs, and caring for concrete in Hawaii.</p></div></section>
   <section class="section"><div class="container">${list}</div></section>${ctaBand()}`;
-  return layout({title:`Concrete Tips for Oahu Homeowners | Cruz Control Concrete`,desc:`Practical concrete advice for Hawaii homes: driveways, patios, slabs and maintenance, from the Cruz Control crew in Waianae. Free estimates: ${biz.phone}.`,slug:'blog',body});
+  return layout({title:`Concrete Tips for Oahu Homeowners | Cruz Control Concrete`,desc:`Practical concrete advice for Hawaii homes: driveways, patios, slabs and maintenance, from the Cruz Control crew in Waianae. Free estimates: ${biz.phone}.`,slug:'blog',body,preloadImg:IMG+'concrete-steps.jpg'});
 }
 
 /* ---------- write ---------- */
@@ -409,6 +431,22 @@ mkdirSync(OUT,{recursive:true});
 function copyDir(src,dst){ mkdirSync(dst,{recursive:true}); for(const e of readdirSync(src)){ const s=join(src,e),d=join(dst,e); if(statSync(s).isDirectory()) copyDir(s,d); else writeFileSync(d, readFileSync(s)); } }
 copyDir('public', OUT);
 
+function notFound(){
+  const body=`<section class="hero">${heroBg('deck-view-1.jpg')}<div class="container">
+    <p class="eyebrow" style="color:#9fd4dd">404</p><h1>That page poured somewhere else</h1>
+    <p>The page you are looking for does not exist or has moved. The links below will get you back on solid ground.</p>
+    <div class="actions"><a class="btn btn--primary" href="/">Go to the homepage</a><a class="btn btn--ghost" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
+  </div></section>
+  <section class="section"><div class="container">
+    <div class="grid grid-3">
+      <div class="tile"><h3>Services</h3><p><a href="/concrete-services/">All concrete services</a>, including <a href="/concrete-driveway-contractor/">driveways</a>, <a href="/concrete-patio-contractor/">patios</a>, and <a href="/masonry-contractor/">masonry</a>.</p></div>
+      <div class="tile"><h3>Service Areas</h3><p><a href="/service-areas/">Every Oahu town we serve</a>, from Waianae to Kailua, each with its own local page.</p></div>
+      <div class="tile"><h3>Free Estimate</h3><p><a href="/contact/">Request a free, no-obligation estimate</a> and we will reach out fast.</p></div>
+    </div>
+  </div></section>`;
+  return layout({title:`Page Not Found | ${biz.name}`,desc:`That page does not exist. Find concrete services, service areas, and free estimates from Cruz Control Concrete Hawaii.`,slug:'404',body});
+}
+
 page('', home());
 page('concrete-services', servicesHub());
 services.forEach(s=>page(s.slug, servicePage(s)));
@@ -419,6 +457,7 @@ page('contact', contact());
 const posts = readPosts();
 posts.forEach(p=>page('blog/'+p.slug, postPage(p)));
 page('blog', blogIndex());
+writeFileSync(join(OUT,'404.html'), notFound());
 
 // sitemap + robots
 const urls = ['', 'concrete-services','service-areas','about-us','contact','blog',
