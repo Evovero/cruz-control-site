@@ -211,3 +211,17 @@ a.pill:hover{border-color:var(--teal);color:var(--ocean)}
 .pill--static{background:var(--sand)}
 .checks--links a{font-weight:600}
 @media (max-width:720px){.steps{grid-template-columns:1fr}}
+
+/* ---------- mobile hamburger nav (2026-07) ---------- */
+.hamb{display:none;background:none;border:0;padding:8px 6px;cursor:pointer}
+.hamb span{display:block;width:22px;height:2.5px;background:var(--ocean);margin:5px 0;border-radius:2px;transition:.2s}
+header.nav.open .hamb span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+header.nav.open .hamb span:nth-child(2){opacity:0}
+header.nav.open .hamb span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media(max-width:880px){
+  header.nav.open .menu{display:flex;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #eee;box-shadow:var(--shadow);padding:10px 20px 22px;max-height:calc(100vh - 72px);overflow:auto}
+  header.nav.open .menu>li>a{display:block;padding:12px 0;font-size:1.05rem;border-bottom:1px solid #f2ede4}
+  header.nav.open .submenu{display:block;position:static;min-width:0;border:0;box-shadow:none;padding:2px 0 6px 14px}
+  header.nav.open .submenu a{padding:8px 0;font-size:.95rem;color:var(--gray)}
+  header.nav.open .menu .has>a::after{content:""}
+}

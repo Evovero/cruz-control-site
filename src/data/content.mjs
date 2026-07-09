@@ -200,11 +200,17 @@ export const locationDetail = {
       { t: "Salt and sun ready", d: "Finishes and reinforcement cover planned for coastal exposure, because we build for the same air our own equipment sits in." },
       { t: "Rocky ground handled", d: "Valley lots hit rock fast. We excavate and base-prep for it instead of fighting it on pour day." },
     ],
+    projects: [
+      "Driveway replacement leads the list in Waianae. A lot of homes here still have their original concrete, and decades of sun, salt, and heavy family use have taken their toll. We saw-cut, break out, and haul the old slab, then rebuild the base before the new pour, so the replacement outlasts the original. Carport slabs and extra parking pads come up nearly as often, since most households on this coast run more vehicles than the original builder planned for.",
+      "Backyard work is the other steady request: patios sized for family gatherings, walkways that tie the yard together, and hollow tile walls for privacy and property lines. Because our shop is minutes away, we also take the small jobs many contractors skip, AC pads, trash enclosures, short wall repairs, and fit them between larger pours without making you wait a season.",
+    ],
     faqs: [
       { q: "Are you actually based in Waianae?", a: "Yes. Our shop is on Manuu Street in Waianae, and most of our crew lives on this side of the island. Waianae jobs are home games for us." },
       { q: "How fast can you get out for an estimate in Waianae?", a: "Usually within a few days, sometimes sooner since we are already here. Call or text 808-499-8562 and we will set a time that works." },
       { q: "What concrete work do you do in Waianae?", a: "Everything residential: new and replacement driveways, patios, slabs for sheds and additions, stamped and colored finishes, hollow tile walls, retaining walls, and concrete removal." },
       { q: "Does salt air really affect concrete?", a: "Over time, yes. Salt attacks exposed steel and can wear unprotected surfaces, so near the coast we pay extra attention to concrete cover over reinforcement and recommend sealers where they earn their keep." },
+      { q: "Do I need a permit for concrete work in Waianae?", a: "It depends on the project. Flatwork like driveways and patios often does not need one, while walls over certain heights and structural slabs usually do. Every permit on Oahu runs through the City and County of Honolulu, and we tell you what your project requires at the estimate." },
+      { q: "How long does a driveway replacement take?", a: "Most Waianae driveway replacements run about three to five working days: demolition and haul-off, base rebuild, forming, pour, and finish. Then plan on about a week of cure time before parking on it. We give you exact dates when we schedule the job." },
     ],
   },
 
@@ -222,11 +228,17 @@ export const locationDetail = {
       { t: "Slope and drainage first", d: "Valley lots shed water fast in heavy rain. We grade and pitch so runoff goes where it should, not across your new slab." },
       { t: "Beachfront experience", d: "Sandy soil near the water needs deeper prep and honest compaction. We have done it here many times." },
     ],
+    projects: [
+      "Makaha work splits between the valley and the water. Up the valley, we replace driveways on sloped lots where runoff has undermined old concrete, and we build retaining walls that turn a grade into usable yard. Near the beach, patios and lanai extensions lead the list, poured on deep, honestly compacted base so the sandy ground never gets a vote on how flat the slab stays.",
+      "We also handle a steady run of practical pours here: parking pads for boats and trailers, walkway replacements for older homes, and slab work for sheds and storage buildings. Makaha is a five minute drive from our shop, so scheduling stays flexible and we can split bigger projects into phases when that suits the budget better.",
+    ],
     faqs: [
       { q: "Do you serve Makaha?", a: "Yes, constantly. Makaha is one of the closest towns to our Waianae base, so we are up here for driveways, patios, slabs, and block walls year round." },
       { q: "Can you pour a driveway on a sloped Makaha lot?", a: "Yes. Sloped driveways need the right finish for grip, control joints placed for the grade, and drainage planned from the start. That is standard practice for us on valley lots." },
       { q: "Is sandy soil near the beach a problem for concrete?", a: "Not if it is prepped honestly. Sandy ground compacts well when handled correctly, but it punishes shortcuts. We excavate, compact, and base every beachside pour so the slab stays flat." },
       { q: "What does a concrete project in Makaha cost?", a: "It depends on size, access, finish, and how much prep the ground needs, so we do not quote blind. The estimate is free and we put real numbers on it after seeing the site." },
+      { q: "How long does a patio take in Makaha?", a: "Most patios run two to four working days depending on size and finish, with stamped or colored work adding a day for detailing and sealing. Foot traffic is fine after about 48 hours, and we confirm the full schedule at the estimate." },
+      { q: "Do you take small jobs in Makaha?", a: "Yes. Being based next door in Waianae means small pours like AC pads, walkway sections, and step repairs are easy to slot into our schedule. No job in Makaha is too small to price honestly." },
     ],
   },
 
@@ -244,11 +256,17 @@ export const locationDetail = {
       { t: "Coastal-grade builds", d: "Salt air is a fact of life here. We build with it in mind, from reinforcement cover to finish and sealer choices." },
       { t: "Upgrade specialists", d: "Old driveway out, new driveway in. We remove, haul, prep, and repour as one clean job." },
     ],
+    projects: [
+      "Maili keeps us busy with the fundamentals: driveway replacements on homes where the original slab has cracked past saving, patio pours for families who live outside most of the year, and slabs for sheds and carports. The flat coastal lots make for clean, efficient projects, and most jobs here wrap inside a week from demo to finished concrete.",
+      "Sea Country adds a different flavor up the hill, with newer homes wanting stamped patios, widened driveways, and yard improvements that match the neighborhood's look. We also pour plenty of small practical work across Maili, equipment pads, walkways, and trash pad slabs, often combined with a neighbor's project to share mobilization.",
+    ],
     faqs: [
       { q: "Do you work in Maili?", a: "Yes, Maili is core service area for us. We are based just up the road in Waianae and handle driveways, patios, slabs, decorative concrete, and block walls here all the time." },
       { q: "Can you replace my old cracked driveway in Maili?", a: "Yes, that is one of our most common Leeward coast jobs. We break out the old slab, haul it away, rebuild the base, and pour a new driveway that is not inheriting the old problems." },
       { q: "How long does a patio take in Maili?", a: "Most patios run two to four working days depending on size and finish: excavation and prep, then pour and finishing. Stamped or colored work adds a little time for detailing and sealing." },
       { q: "Do you do smaller jobs like AC pads or walkways?", a: "Yes. Because Maili is so close to our shop, small pours like equipment pads, walkways, and steps are easy for us to fit into the schedule alongside bigger projects." },
+      { q: "Do I need a permit for a driveway or patio in Maili?", a: "Standard residential flatwork often does not require one, but walls and structural slabs usually do. All permits here run through the City and County of Honolulu, and we sort out what applies to your project before any work starts." },
+      { q: "Can I get a stamped or colored patio in Maili?", a: "Yes. We install stamped, colored, and exposed aggregate finishes across the Leeward coast and bring samples to the estimate so you can pick a pattern that fits your home. Coastal lots get a UV-stable sealer to hold the color." },
     ],
   },
 
@@ -266,11 +284,17 @@ export const locationDetail = {
       { t: "Homestead and family lots", d: "We respect the properties we work on and leave sites clean, whether it is a new build or a home that has been in the family for fifty years." },
       { t: "Close enough to care", d: "Fifteen minutes away means we check our work, honor schedules, and answer the phone after the pour." },
     ],
+    projects: [
+      "In Nanakuli, the most common call is renewal: original driveways and walkways that served a family for decades and are ready for replacement. We handle full removal and repour, and where a property has settled unevenly, we regrade so the new concrete drains correctly instead of copying the old problems. Hollow tile walls are the other staple, both new privacy walls and rebuilds of older walls that have leaned or cracked.",
+      "New construction in the valley and on homestead lands brings slab work too: house additions, carports, and storage buildings. We coordinate with your builder, pour to plan, and keep the site clean, and because we are fifteen minutes away, punch-list items get handled fast instead of lingering.",
+    ],
     faqs: [
       { q: "Do you serve Nanakuli?", a: "Yes. Nanakuli is part of our home Leeward coast territory, minutes from our Waianae shop. Driveways, patios, slabs, and block walls, we do them all here." },
       { q: "My driveway is original to the house. Repair or replace?", a: "If it is decades old with widespread cracking or settling, replacement usually beats chasing repairs. If the damage is limited and the base is sound, repair can make sense. We give you the honest read at the estimate." },
       { q: "Do you build hollow tile walls in Nanakuli?", a: "Yes, property line walls, privacy walls, and retaining walls. Every wall starts with a proper footing and gets steel and grout where the design calls for it." },
       { q: "How do I get an estimate?", a: "Call or text 808-499-8562 or use the form on this page. We will set a time, walk the project with you, and get you a clear written estimate with no obligation." },
+      { q: "How long does a hollow tile wall take to build?", a: "A typical residential wall runs one to two weeks depending on length and height: footing excavation and pour, block laying, grouting, and caps. Retaining walls add drainage work behind the wall. We map the schedule out at the estimate." },
+      { q: "Can you work around our family's schedule?", a: "Yes. We set start times and site logistics around what works for your household, keep the work area contained, and make sure vehicles have a place to park while the driveway cures." },
     ],
   },
 
@@ -288,11 +312,17 @@ export const locationDetail = {
       { t: "Driveway widening pros", d: "Many Kapolei drives were built minimum-width. We widen and extend with clean joints and matched finishes." },
       { t: "Stamped patio favorites", d: "Newer backyards take beautifully to stamped and colored patios. We bring pattern samples to the estimate." },
     ],
+    projects: [
+      "Kapolei's most requested project is the driveway upgrade: widening a tight two-car approach, adding a third parking space, or replacing builder-grade concrete that cracked early. Because these neighborhoods are newer and uniform, we finish the work to blend with the street, clean edges, matched broom texture, and joints that line up with what is already there.",
+      "Backyards are the other half of our Kapolei work. Stamped and colored patios turn small yards into real outdoor rooms, and slab pours for sheds, play courts, and ADUs put unused lawn to work. Up in Makakilo, grades come into play, so those projects get the same drainage-first planning we use on hillside lots across the island.",
+    ],
     faqs: [
       { q: "Do you work in Kapolei and Makakilo?", a: "Yes, both. Kapolei is about twenty five minutes from our Waianae shop and one of our busiest service areas, from Makakilo hillside lots down through the villages." },
       { q: "Can you widen my driveway in Kapolei?", a: "Yes. Widening is one of our most requested Kapolei jobs since many homes here were built with tight two-car drives. We tie the new section in with proper joints and match the finish as closely as concrete allows." },
       { q: "Will your work meet my HOA's standards?", a: "Our finishes and edges are clean, and we can provide details your association asks for before work starts. If your HOA needs specific colors or finishes, we plan for it in the estimate." },
       { q: "Do you pour slabs for sheds and ADUs in Kapolei?", a: "Yes. Storage sheds, workout rooms, and ADU foundations are all common requests here, and we deliver flat, square, reinforced slabs ready for whatever goes on top." },
+      { q: "How long does a stamped patio take in Kapolei?", a: "Plan on three to five working days for most stamped patios: excavation and base, pour and stamping, then sealing once the surface is ready. You can walk on it in about two days and load it fully after about a week." },
+      { q: "Do you haul away the old concrete when you widen a driveway?", a: "Yes. Any demolition we do includes breakout, loading, and haul-off. The site is left clean and graded, and the new section is poured on a fresh compacted base, never on top of old debris." },
     ],
   },
 
@@ -310,11 +340,17 @@ export const locationDetail = {
       { t: "Pool deck expertise", d: "Grip textures, cool-underfoot finishes, and drainage that keeps decks safe and dry." },
       { t: "Twenty minutes away", d: "Close enough to our Waianae base for responsive scheduling and follow-through." },
     ],
+    projects: [
+      "Ko Olina projects are finish-driven. Pool deck resurfacing and replacement lead the list, with grip textures and cool-underfoot finishes that make the deck usable at mid-afternoon. Stamped courtyard entries and driveway upgrades follow close behind, where the concrete is chosen to complement the home's stone, roofline, and landscaping rather than just fill space.",
+      "We also handle the quieter structural work these properties need: slab pours for outdoor kitchens and cabanas, walkway systems that connect lanai to lawn to gate, and repairs where salt exposure has worked on older surfaces. Scheduling respects occupancy, and for homes that host guests we plan pours between stays.",
+    ],
     faqs: [
       { q: "Do you handle high-end decorative projects?", a: "Yes, decorative work is a specialty. Stamped patterns, integral color, exposed aggregate, and borders, installed with the structural fundamentals underneath that make them last." },
       { q: "Can you build or resurface a pool surround in Ko Olina?", a: "Yes. We pour new pool decks and surrounds with grip textures and proper drainage. For existing decks, we will assess whether resurfacing or replacement is the smarter investment." },
       { q: "How does salt air affect decorative concrete?", a: "It is the main design constraint on coastal lots. We counter it with integral color rather than surface coatings, UV-stable sealers, and adequate cover over any reinforcement, so the finish keeps its color and integrity." },
       { q: "Do you coordinate with property managers or HOAs?", a: "Yes. We can work through your association's approval requirements and schedule around occupancy, which matters for Ko Olina homes that host guests or rentals." },
+      { q: "How long does a decorative project take in Ko Olina?", a: "Most stamped or colored projects run three to six working days depending on size, with sealing as the final step. We build the schedule around your occupancy calendar and confirm every date in advance." },
+      { q: "How often should decorative concrete be resealed here?", a: "On coastal lots like Ko Olina, plan on resealing every two to three years. Salt and full sun work on sealers faster than inland conditions, and a simple resealing routine keeps color and sheen at their best." },
     ],
   },
 
@@ -332,11 +368,17 @@ export const locationDetail = {
       { t: "Big flat yards", d: "Flat lots are perfect for large patios and extended parking. We help you use the space you already own." },
       { t: "New-neighborhood fit", d: "Clean edges and consistent finishes that match the look of Ewa's newer streets." },
     ],
+    projects: [
+      "Ewa Beach is patio country. Flat, sunny lots and newer homes make backyard concrete the number one request, from simple broom-finish pads to stamped outdoor rooms with borders and seat walls. Driveway work runs a close second: widening for growing households, and replacing early-2000s builder concrete that has cracked or settled where the base was rushed.",
+      "The third steady stream is slabs, for sheds, home gyms, and ADUs across Ewa Gentry and Ocean Pointe. Coral ground here compacts beautifully when it is prepped honestly, so our crews verify base density before every pour. We also tie new concrete into existing sidewalks and curbs cleanly, which keeps HOA conversations short.",
+    ],
     faqs: [
       { q: "Do you serve Ewa Beach and Ocean Pointe?", a: "Yes, all of Ewa: Ewa Gentry, Ocean Pointe, Ewa Villages, Iroquois Point, and Hoakalei. It is about thirty minutes from our Waianae shop and we are here weekly." },
       { q: "Why does soil prep matter so much in Ewa?", a: "The area sits on coral and sandy ground from its plantation days. It drains well but settles if it is not compacted correctly, so base prep is where an Ewa slab succeeds or fails. We do it right the first time." },
       { q: "Can you extend my patio or add a parking pad?", a: "Yes, extensions are some of our most common Ewa Beach jobs. Flat lots make it easy to add usable space, and we tie new concrete to old with doweled connections and matched elevations." },
       { q: "How soon can you start an Ewa Beach project?", a: "Estimates usually happen within the week, and project start depends on the current schedule and any permit needs. Call 808-499-8562 and we will give you real dates, not vague promises." },
+      { q: "Can I get a stamped patio in Ewa Beach?", a: "Yes, stamped and colored patios are among our most common Ewa Beach projects. We bring pattern and color samples to the estimate, and every decorative pour gets a UV-stable sealer suited to Ewa's full-sun exposure." },
+      { q: "How thick will my new driveway be?", a: "Residential driveways are typically poured at four inches with steel reinforcement, thicker where trucks or trailers will park. The real key in Ewa is base compaction, which we treat as the most important part of the job." },
     ],
   },
 
@@ -354,11 +396,17 @@ export const locationDetail = {
       { t: "Parking solutions", d: "Multi-car households are the norm here. We widen drives and add pads that fit the lot cleanly." },
       { t: "Hillside know-how", d: "Village Park and Royal Kunia grades need proper drainage planning, which we build in from the estimate." },
     ],
+    projects: [
+      "The classic Waipahu project is a full driveway replacement on an established home: original concrete out, base rebuilt, new slab in, often widened at the same time to fit how the household actually parks. Walkways, steps, and small retaining walls frequently join the scope, since it is efficient to renew everything in one mobilization.",
+      "Up in Village Park, Royal Kunia, and Waikele, grades add drainage planning to the mix, and we pour plenty of slabs for additions and ADUs as families expand homes rather than move. Hollow tile wall repair rounds out the list, older walls that have cracked or leaned get rebuilt with proper footings and grout.",
+    ],
     faqs: [
       { q: "Do you work in Waipahu?", a: "Yes, all of it: Waipahu town, Village Park, Royal Kunia, Waikele, and Crestview. We are about thirty minutes from our Waianae base and in the area constantly." },
       { q: "My driveway is cracked and sunken. What are my options?", a: "Widespread cracking with settling usually means the base has failed, and replacement is the honest fix. We remove the old concrete, rebuild and compact the base, and pour new. If the damage is limited, we will say so." },
       { q: "Can you add parking for extra vehicles?", a: "Yes, that is one of our most common Waipahu projects. We build side pads and widened approaches with clean joints, correct thickness for vehicles, and finishes that match the existing drive." },
       { q: "Do you pour slabs for home additions in Waipahu?", a: "Yes. Additions and ADU slabs are steady work here, poured flat and square to your builder's plans with reinforcement and vapor barriers where the use calls for it." },
+      { q: "How long does a driveway replacement take in Waipahu?", a: "Typically three to five working days on site: demolition, base rebuild, forming, pour, and finish, then about a week of cure before vehicles go back on. We coordinate parking logistics with you before demo day." },
+      { q: "Do I need a permit to replace my driveway?", a: "Like-for-like residential driveway replacement often does not need one, though walls and structural changes usually do. Permits on Oahu go through the City and County of Honolulu, and we confirm the requirements for your specific scope." },
     ],
   },
 
@@ -376,11 +424,17 @@ export const locationDetail = {
       { t: "Retaining walls that last", d: "Footings, steel, grout, and drainage behind the wall. The invisible parts are the point." },
       { t: "Terracing for usable yards", d: "We turn sloped backyards into flat patios and lawns with wall-and-slab combinations." },
     ],
+    projects: [
+      "Sloped driveways are the signature Pearl City project: replacements poured with traction finishes, joints planned for the grade, and gutters or channel drains that take runoff somewhere harmless. Retaining walls come next, both new walls that carve flat yard space out of a hillside and rebuilds of older walls that have started to lean after years of saturated-slope pressure.",
+      "On the flatter streets near Pearlridge and Momilani, the work looks more familiar: patio pours, walkway renewal, and slabs for additions. Whatever the lot, every Pearl City estimate starts with the same two questions, where does the water go now, and where should it go once the new concrete is in.",
+    ],
     faqs: [
       { q: "Can you pour a steep driveway in Pearl City?", a: "Yes. Steep drives need a finish with traction, control joints placed for the slope, and drainage that keeps water from sheeting where it should not. We build them regularly on the Pearl City hillside." },
       { q: "Do I need a retaining wall for my sloped yard?", a: "If you want flat, usable space on a graded lot, often yes. We will look at the slope and soil at the estimate and tell you whether a wall, a terrace, or simple regrading gets you there most sensibly." },
       { q: "Do you serve Pacific Palisades and Manana?", a: "Yes, the whole Pearl City area from the flats near Pearlridge up to Pacific Palisades. The drive from our Waianae shop is about thirty five minutes." },
       { q: "What makes hillside concrete different?", a: "Water and gravity. Slabs and walls on grades face runoff pressure flat lots never see, so drainage, footing depth, and joint placement all have to be designed for the slope. That planning happens at the estimate, not on pour day." },
+      { q: "How long does a sloped driveway replacement take?", a: "Slightly longer than a flat one, typically four to six working days, because demolition on a grade is slower and drainage details take extra forming. Cure time before parking stays about a week." },
+      { q: "Can you fix the drainage along with the concrete?", a: "Yes, and we prefer to. Channel drains, curbing, and regrading get designed into the pour rather than bolted on later, so the new concrete and the water management work as one system." },
     ],
   },
 
@@ -398,11 +452,17 @@ export const locationDetail = {
       { t: "Steps and entries", d: "Concrete and block steps rebuilt to consistent, safe heights with finishes that match the home." },
       { t: "Hillside drainage", d: "Aiea's grades move serious water in heavy rain. Our pours and walls are planned around it." },
     ],
+    projects: [
+      "Aiea's older housing stock drives a renewal-heavy project list: full driveway replacements, often widened from the original single-car footprint, and step rebuilds where decades of use have worn treads unsafe. Retaining wall work is constant on the heights, from short garden walls to structural rebuilds with proper footings and drainage.",
+      "We also pour slabs for carports, additions, and storage structures across Halawa and Newtown, and handle combined projects where a family renews driveway, walkway, and steps in one pass. Bundling that work into a single mobilization is the most cost-effective way to modernize an older Aiea property's concrete.",
+    ],
     faqs: [
       { q: "Do you replace old driveways in Aiea?", a: "Yes, it is our most common Aiea job. Many original driveways here are past their service life, and we handle removal, haul-away, base rebuild, and the new pour as one clean project." },
       { q: "Can you rebuild concrete steps?", a: "Yes. Settled or crumbling steps are a safety issue, and we rebuild them with consistent riser heights, solid footings, and finishes that suit the house. Block cheek walls and handrail-ready edges are available too." },
       { q: "Do you build retaining walls in Aiea?", a: "Yes, hollow tile retaining walls with reinforced footings, steel, grout, and drainage behind the wall. On Aiea's slopes, the drainage is what keeps a wall standing long term." },
       { q: "How far is Aiea from your shop?", a: "About forty minutes from Waianae. We batch our central-Oahu scheduling so Aiea projects get full crew days, not squeezed half-days." },
+      { q: "Do retaining walls in Aiea need permits?", a: "Most structural retaining walls do, with requirements depending on height and what the wall holds back. The City and County of Honolulu handles all Oahu permitting, and we walk you through exactly what your wall needs before work begins." },
+      { q: "How long does a steps-and-walkway project take?", a: "Most step and walkway renewals wrap in two to four working days, including demolition of the old concrete. Steps are ready for careful use after about two days and full use within a week." },
     ],
   },
 
@@ -420,11 +480,17 @@ export const locationDetail = {
       { t: "Uniform street look", d: "Replacements finished to sit naturally beside neighboring driveways and walks." },
       { t: "Cooler, wetter climate", d: "Central plateau rain and shade get factored into finish and drainage choices." },
     ],
+    projects: [
+      "Mililani's most common projects mirror the community's age: driveways and walkways from the original build-out reaching replacement time, and backyard patios getting upgraded from plain pads to stamped outdoor spaces. Because streets here share a consistent look, we finish replacements to blend in, matched textures, clean edges, and joints that respect the original layout.",
+      "Mauka's newer sections bring slab work for sheds, play areas, and home gyms, plus driveway extensions where households have outgrown two-car parking. The plateau's extra rain folds drainage into every plan, and shaded lots get finishes chosen to resist the mildew that constant moisture invites.",
+    ],
     faqs: [
       { q: "Do you work in both Mililani Town and Mauka?", a: "Yes, both sides plus Launani Valley. Mililani is about thirty five minutes from our Waianae base, and we typically schedule full project days here." },
       { q: "Will the work meet Mililani Town Association requirements?", a: "Our finishes and edges are built for exactly this kind of review, and we can provide the project details your association asks for before work begins. Tell us at the estimate and we plan for it." },
       { q: "Can you match my new driveway to the neighborhood look?", a: "Yes. Mililani streets have a consistent character, and we finish new work so it fits in rather than standing out for the wrong reasons. Exact color matching of old and new concrete is never perfect, but we get it close and clean." },
       { q: "Does Mililani's wetter weather change anything?", a: "A little. The plateau sees more rain and cloud than the Leeward coast, so we watch pour windows and lean toward finishes that handle frequent moisture. Nothing exotic, just experience with the microclimate." },
+      { q: "How long does a patio project take in Mililani?", a: "Most run three to five working days depending on size and finish, plus sealing for decorative work. We watch the plateau's afternoon showers when scheduling pours and build a weather day into the plan when the season calls for it." },
+      { q: "Do you handle the old concrete tear-out?", a: "Yes, demolition and haul-off are part of the job. We saw-cut clean lines, break out the old slab, and leave the site graded and ready, never a pile of rubble at the curb." },
     ],
   },
 
@@ -442,11 +508,17 @@ export const locationDetail = {
       { t: "Valley rain ready", d: "Manoa and Palolo drainage gets designed in, not discovered later." },
       { t: "All neighborhoods", d: "From Salt Lake to Kaimuki, if it is residential concrete, we pour it." },
     ],
+    projects: [
+      "Town projects run the full menu, but three dominate: driveway replacements on hillside streets in Kalihi and Palolo where age and runoff have broken the original pour, patio and lanai slabs behind Kaimuki and Manoa homes, and step or walkway rebuilds on the walk-up lots that define so many Honolulu neighborhoods.",
+      "Access shapes everything in the city. We plan pump placement, material staging, and crew parking before pour day, and we keep compact sites genuinely clean because your neighbors are ten feet away. Wall repair is steady work too, especially in the wetter valleys where decades of rain have found the weak spots in older masonry.",
+    ],
     faqs: [
       { q: "Do you really come into Honolulu from Waianae?", a: "Yes. Town jobs are scheduled as full crew days so the drive never affects quality or timeline. You get west-side pricing honesty with the same finish standard we put on our own coast." },
       { q: "Can you pour on a tight urban lot?", a: "Yes, tight access is normal in town. Depending on the site we use concrete pumps, wheelbarrow relays, or staged small pours. The plan is set at the estimate, not improvised on pour day." },
       { q: "My neighborhood gets heavy valley rain. Does that change the design?", a: "It should. Manoa, Palolo, and Nuuanu see far more rain than the leeward side, so slabs need stronger slope-and-drain planning and walls need proper weeps and backfill. We design for the microclimate your house actually lives in." },
       { q: "What Honolulu concrete work do you handle?", a: "Residential driveways, slabs, patios, steps, hollow tile and retaining walls, decorative finishes, and removal or demolition. Large commercial work is not our lane, homes are." },
+      { q: "Do Honolulu projects need permits?", a: "The same City and County of Honolulu rules apply island-wide: flatwork often exempt, walls and structural work usually not. Tight-lot logistics like street use are handled in our planning, and we confirm all requirements for your scope up front." },
+      { q: "How long does a typical town project take?", a: "Similar to anywhere on Oahu, two to five working days for most driveways and patios, with tight-access jobs occasionally running a day longer for staged pours. We give you a firm schedule once we have seen the site." },
     ],
   },
 
@@ -464,11 +536,17 @@ export const locationDetail = {
       { t: "Estate-scale capable", d: "Large courtyards and long driveways poured in planned sections with consistent color and texture." },
       { t: "Discreet and tidy", d: "Quiet, clean job sites and schedules that respect the neighborhood." },
     ],
+    projects: [
+      "Kahala projects center on presentation surfaces: stamped or exposed-aggregate driveways that frame the property, entry courtyards with borders and banding, and pool decks finished for barefoot comfort and wet grip. Larger properties often phase the work, entry first, then pool surround, then garden paths, and we plan sections so color and texture stay consistent across phases.",
+      "Behind the decorative work sits the same structural discipline as any pour: compacted base, correct reinforcement, and drainage that protects both the concrete and the landscaping investment around it. We also replace older concrete where salt air has worked on surfaces for decades, matching the new finish to the home's current architecture.",
+    ],
     faqs: [
       { q: "Do you handle high-end residential work?", a: "Yes, decorative and estate-level residential concrete is a specialty. We bring pattern and color samples to the consultation and detail the work by hand where it matters." },
       { q: "Can you match concrete to my home's architecture?", a: "That is the goal of every decorative project. Stamp patterns, integral colors, exposed aggregate, and border details give us a wide palette to work with, and we design the combination around your home rather than from a catalog." },
       { q: "How do you protect finishes near the ocean?", a: "Integral color instead of thin coatings, UV-stable sealers, and correct cover over reinforcement. Salt and sun are relentless in Kahala, so durability is engineered in rather than hoped for." },
       { q: "Do you work with landscape architects or designers?", a: "Yes, happily. We can pour to a designer's plan and coordinate sequencing with the other trades so the hardscape lands exactly where the drawings say it should." },
+      { q: "How long does an estate driveway project take?", a: "Larger decorative driveways typically run one to two weeks including demolition, base work, staged pours, stamping, and sealing. We sequence sections so you keep vehicle access through most of the project." },
+      { q: "What maintenance does decorative concrete need?", a: "Rinse regularly, avoid harsh chemicals, and reseal every two to three years in Kahala's coastal exposure. That routine keeps color depth and sheen, and we can put you on a reminder schedule for resealing." },
     ],
   },
 
@@ -486,11 +564,17 @@ export const locationDetail = {
       { t: "Outdoor living builds", d: "Patios, pool decks, and lanai extensions designed for how east-side homes entertain." },
       { t: "Renovation-grade quality", d: "Concrete upgrades that match the standard of Hawaii Kai's renovated homes." },
     ],
+    projects: [
+      "Hawaii Kai work concentrates on outdoor living: pool deck replacement and resurfacing, stamped patios built for entertaining, and lanai extensions that open marina-view homes outward. Original 1970s driveways are the other big category, replaced with modern reinforcement and finishes that suit what these homes have become after renovation.",
+      "Ridge neighborhoods like Mariners Ridge and Kalama Valley add slope work, driveways with traction finishes and drainage planned for the grade. Everywhere in Hawaii Kai, moisture is the design constant, so surfaces get pitched to shed water fast and reinforcement gets the cover it needs to shrug off salt air.",
+    ],
     faqs: [
       { q: "Do you serve Hawaii Kai from the west side?", a: "Yes. East-side jobs are planned as dedicated crew days, so the distance from our Waianae shop never touches the quality or the schedule you are promised." },
       { q: "What is different about pouring concrete near the marina?", a: "Constant moisture and salt. We increase attention on concrete cover over reinforcement, choose sealers rated for the exposure, and pitch every surface so water drains instead of ponding against the house or pool." },
       { q: "Can you replace a 1970s driveway in Hawaii Kai?", a: "Yes, original driveways from the neighborhood's first build-out are a common replacement for us. We remove, rebuild the base, and pour new work that suits what the home has become since." },
       { q: "Do you build pool decks?", a: "Yes, new surrounds and replacements, with grip textures for wet feet and finishes that stay comfortable in full sun. Drainage design is part of every deck we pour." },
+      { q: "How long does a pool deck replacement take?", a: "Most run about a week: demolition, base and drainage work, pour, finishing, and sealing. The pool stays usable through much of the project, and we coordinate the few no-swim days with you in advance." },
+      { q: "How do I maintain concrete near the marina?", a: "Rinse salt off periodically, keep drains clear, and reseal decorative surfaces every two to three years. Well-built concrete needs little else, the durability is poured in at construction, not maintained in afterward." },
     ],
   },
 
@@ -508,11 +592,17 @@ export const locationDetail = {
       { t: "Beach-town salt handling", d: "The same coastal reinforcement and sealer discipline we use on our own Leeward shore." },
       { t: "Outdoor living focus", d: "Patios and extensions designed for Kailua's backyard-first lifestyle." },
     ],
+    projects: [
+      "Kailua's project list starts in the backyard: patios and lanai extensions designed for a town that lives outdoors, poured with wet-grip textures and drainage sized for windward rain. Driveway replacements follow on the older streets around Enchanted Lake and Coconut Grove, where original concrete has served fifty years and earned retirement.",
+      "Beach-side lots in Lanikai and near Kalama Beach bring sandy-soil slab work, deep prep, honest compaction, and reinforcement covered properly against salt. We also build and rebuild hollow tile walls across town, with drainage detailing that windward weather makes non-negotiable.",
+    ],
     faqs: [
       { q: "Do you come over the Koolaus for Kailua jobs?", a: "Yes. Kailua projects are scheduled as full dedicated days, so the cross-island drive is our logistics problem, not yours. Estimates, pours, and follow-ups all happen when promised." },
       { q: "Does windward rain change how a patio is built?", a: "Yes, meaningfully. We pitch surfaces to shed water fast, place drains where the yard collects it, and choose textures with wet grip. A patio designed for Ewa sun would underperform in Kailua, so we do not build it that way here." },
       { q: "Can you handle sandy soil near Kailua Beach and Lanikai?", a: "Yes. Sandy ground takes concrete well when it is excavated and compacted honestly, and we add the base depth beach lots need. It is the same coastal ground discipline we grew up on in Waianae." },
       { q: "What Kailua projects do you take on?", a: "Residential work across the town: patios, lanai extensions, driveways, shed and ADU slabs, hollow tile walls, steps, and removal of old concrete. If it is concrete at a home, it is our lane." },
+      { q: "How long does a Kailua patio take?", a: "Two to five working days depending on size and finish. We watch windward weather windows closely when scheduling the pour, and build in a contingency day during the wetter months so the finish never gets rushed against rain." },
+      { q: "Do Kailua projects need permits?", a: "The same island-wide rules apply: most flatwork is exempt, walls and structural slabs usually need City and County of Honolulu permits. We confirm your project's requirements at the estimate and handle the process with you." },
     ],
   },
 };

@@ -63,7 +63,7 @@ function header(){
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/contact/">Contact</a></li>
     </ul></nav>
-    <div class="nav-cta"><a class="btn btn--primary nav-phone" href="${biz.phoneHref}">&#9742; ${esc(biz.phone)}</a></div>
+    <div class="nav-cta"><a class="btn btn--primary nav-phone" href="${biz.phoneHref}">&#9742; ${esc(biz.phone)}</a><button class="hamb" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
   </div></header>`;
 }
 
@@ -105,7 +105,8 @@ ${schema?`<script type="application/ld+json">${schema}</script>`:''}
 ${header()}
 ${body}
 ${footer()}
-<script>document.addEventListener('input',function(e){if(e.target&&e.target.type==='tel'){var v=e.target.value.replace(/\\D/g,'').slice(0,10),p='';if(v.length>6)p='('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6);else if(v.length>3)p='('+v.slice(0,3)+') '+v.slice(3);else if(v.length>0)p='('+v;e.target.value=p;}});</script>
+<script>document.addEventListener('click',function(e){var nav=document.querySelector('header.nav');var h=e.target.closest('.hamb');if(h){var open=nav.classList.toggle('open');h.setAttribute('aria-expanded',open?'true':'false');}else if(nav&&nav.classList.contains('open')&&e.target.closest('.menu a')){nav.classList.remove('open');}});
+document.addEventListener('input',function(e){if(e.target&&e.target.type==='tel'){var v=e.target.value.replace(/\\D/g,'').slice(0,10),p='';if(v.length>6)p='('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6);else if(v.length>3)p='('+v.slice(0,3)+') '+v.slice(3);else if(v.length>0)p='('+v;e.target.value=p;}});</script>
 </body></html>`;
 }
 
@@ -286,6 +287,10 @@ function locationPage(l,i=0){
       <ul class="checks checks--links">${servList}</ul>
       <a class="btn btn--dark" href="/concrete-services/">All services &rarr;</a></div>
     <div class="tiles-stack">${highlights}</div></div></section>
+  <section class="section"><div class="container" style="max-width:900px">
+    <p class="eyebrow">Around ${esc(l.town)}</p><h2>The concrete work ${esc(l.town)} calls us for</h2>
+    ${c.projects.map(pp=>`<p class="lead">${esc(pp)}</p>`).join('')}
+  </div></section>
   ${faqSection(c.faqs, 'Concrete in '+l.town+': Common Questions')}
   <section class="section section--sand"><div class="container split">${estimateForm(`Free Estimate in ${l.town}`)}
     <div><p class="eyebrow">Why ${esc(l.town)} homeowners call us</p><h2>Reliable, local, built to last</h2>
