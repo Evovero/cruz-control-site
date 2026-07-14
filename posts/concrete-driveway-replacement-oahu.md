@@ -59,4 +59,4 @@ hero: "driveway-paver.jpg"
 <p>It depends on the scope and your location. A like-for-like replacement is often straightforward, while changes to size, grading, or drainage can require approval. We help homeowners understand what their specific project needs before work begins.</p>
 
 <h2>Ready to Replace Your Driveway?</h2>
-<p>If your driveway is showing the signs above, the sooner you address it, the less likely the damage is to spread to your base or landscaping. Cruz Control Concrete Hawaii builds durable replacements designed for Oahu conditions, from removal to final finish. <a href="/contact/">Request a free, no-obligation estimate</a> today, or call 808-499-8562 to talk through your project with a local concrete pro.</p>
+<p>If your driveway is showing the signs above, the sooner you address it, the less likely the damage is to spread to your base or landscaping. Cruz Control Concrete Hawaii builds durable replacements designed for Oahu conditions, from removal to final finish. <a href="/contact/">Request a free, no-obligation estimate</a> today, or call 808-207-7363 to talk through your project with a local concrete pro.</p>

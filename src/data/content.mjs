@@ -6,7 +6,7 @@
 export const serviceDetail = {
   "concrete-driveway-contractor": {
     metaTitle: "Concrete Driveway Contractor Oahu | Cruz Control Concrete",
-    metaDesc: "Concrete driveway installation and replacement across Oahu. 12+ years of island experience, clean removal and repour. Call 808-499-8562 for a free estimate.",
+    metaDesc: "Concrete driveway installation and replacement across Oahu. 12+ years of island experience, clean removal and repour. Call 808-207-7363 for a free estimate.",
     intro: "A concrete driveway is one of the best investments you can make in your home. We build driveways across Oahu that handle daily vehicle traffic, resist cracking, and lift your curb appeal for decades.",
     included: [
       { t: "New driveway installation", d: "Complete builds from grading and base compaction through the final finish, sized for your cars, your lot, and how your family actually uses the space." },
@@ -42,7 +42,7 @@ export const serviceDetail = {
 
   "concrete-patio-contractor": {
     metaTitle: "Concrete Patio Contractor Oahu | Cruz Control Concrete",
-    metaDesc: "Custom concrete patios built for Oahu outdoor living. Stamped and decorative options, proper drainage, clean finishing. Call 808-499-8562 for a free estimate.",
+    metaDesc: "Custom concrete patios built for Oahu outdoor living. Stamped and decorative options, proper drainage, clean finishing. Call 808-207-7363 for a free estimate.",
     intro: "On Oahu, a patio is not a seasonal luxury, it is living space you use all year. We design and pour concrete patios that are comfortable underfoot, simple to maintain, and built to handle island sun, salt, and rain.",
     included: [
       { t: "Custom patio design and layout", d: "We lay out the patio around how you will use it: grilling, dining, a sitting area under shade, or a full backyard gathering space." },
@@ -80,7 +80,7 @@ export const serviceDetail = {
 
   "concrete-slab-contractor": {
     metaTitle: "Concrete Slab Contractor Oahu | Cruz Control Concrete",
-    metaDesc: "Level, reinforced concrete slabs on Oahu for ADUs, garages, sheds, additions and outdoor kitchens. 12+ years local. Call 808-499-8562 for a free estimate.",
+    metaDesc: "Level, reinforced concrete slabs on Oahu for ADUs, garages, sheds, additions and outdoor kitchens. 12+ years local. Call 808-207-7363 for a free estimate.",
     intro: "A solid slab is the foundation of any successful project. We pour level, reinforced concrete slabs across Oahu for home additions, ADUs, garages, carports, sheds, and outdoor living areas.",
     included: [
       { t: "ADU and addition slabs", d: "Slab work for accessory dwelling units and home additions, poured flat, square, and ready for the framing crew." },
@@ -118,7 +118,7 @@ export const serviceDetail = {
 
   "custom-concrete-contractor": {
     metaTitle: "Custom & Decorative Concrete Oahu | Cruz Control Concrete",
-    metaDesc: "Stamped, colored and textured concrete across Oahu. Stone, tile and wood-plank looks with concrete durability. Call 808-499-8562 for a free estimate.",
+    metaDesc: "Stamped, colored and textured concrete across Oahu. Stone, tile and wood-plank looks with concrete durability. Call 808-207-7363 for a free estimate.",
     intro: "Concrete does not have to be plain gray. Our custom and decorative work turns driveways, patios, and walkways into features, combining high-end looks with the durability concrete is known for.",
     included: [
       { t: "Stamped concrete", d: "Stone, flagstone, tile, and wood-plank patterns pressed into fresh concrete for a natural look at a fraction of the upkeep." },
@@ -156,7 +156,7 @@ export const serviceDetail = {
 
   "masonry-contractor": {
     metaTitle: "Masonry Contractor Oahu | Cruz Control Concrete Hawaii",
-    metaDesc: "Hollow tile block walls, retaining walls, concrete repair and demolition across Oahu. One crew, start to finish. Call 808-499-8562 for a free estimate.",
+    metaDesc: "Hollow tile block walls, retaining walls, concrete repair and demolition across Oahu. One crew, start to finish. Call 808-207-7363 for a free estimate.",
     intro: "Beyond flatwork, we handle the masonry that island properties depend on: hollow tile block walls, retaining walls, repair, restoration, and demolition, from one crew that does both the block and the concrete.",
     included: [
       { t: "Hollow tile block walls", d: "CMU walls for property lines, privacy, and yard structure, laid straight, grouted solid where it counts, and capped clean." },
@@ -195,7 +195,7 @@ export const serviceDetail = {
 export const locationDetail = {
   "concrete-contractor-waianae": {
     metaTitle: "Concrete Contractor Waianae HI | Cruz Control Concrete",
-    metaDesc: "Waianae's local concrete contractor. Driveways, patios, slabs and block walls, based right here on the Leeward coast. Call 808-499-8562, free estimates.",
+    metaDesc: "Waianae's local concrete contractor. Driveways, patios, slabs and block walls, based right here on the Leeward coast. Call 808-207-7363, free estimates.",
     intro: "Waianae is home. Our shop sits right here on the Leeward coast, so when you call us for a driveway, patio, or slab, you are hiring the crew from your own neighborhood, not a company trucking in from town.",
     about: [
       "We live and work with the same conditions your property faces: salt spray off Pokai Bay, rocky volcanic ground as you head up Waianae Valley, and hard sun on everything the mauka ridges do not shade. That daily familiarity shows up in how we prep, pour, and finish every job here.",
@@ -214,7 +214,7 @@ export const locationDetail = {
     ],
     faqs: [
       { q: "Are you actually based in Waianae?", a: "Yes. Our shop is on Manuu Street in Waianae, and most of our crew lives on this side of the island. Waianae jobs are home games for us." },
-      { q: "How fast can you get out for an estimate in Waianae?", a: "Usually within a few days, sometimes sooner since we are already here. Call or text 808-499-8562 and we will set a time that works." },
+      { q: "How fast can you get out for an estimate in Waianae?", a: "Usually within a few days, sometimes sooner since we are already here. Call or text 808-207-7363 and we will set a time that works." },
       { q: "What concrete work do you do in Waianae?", a: "Everything residential: new and replacement driveways, patios, slabs for sheds and additions, stamped and colored finishes, hollow tile walls, retaining walls, and concrete removal." },
       { q: "Does salt air really affect concrete?", a: "Over time, yes. Salt attacks exposed steel and can wear unprotected surfaces, so near the coast we pay extra attention to concrete cover over reinforcement and recommend sealers where they earn their keep." },
       { q: "Do I need a permit for concrete work in Waianae?", a: "It depends on the project. Flatwork like driveways and patios often does not need one, while walls over certain heights and structural slabs usually do. Every permit on Oahu runs through the City and County of Honolulu, and we tell you what your project requires at the estimate." },
@@ -225,7 +225,7 @@ export const locationDetail = {
 
   "concrete-contractor-makaha": {
     metaTitle: "Concrete Contractor Makaha HI | Cruz Control Concrete",
-    metaDesc: "Concrete driveways, patios and slabs in Makaha from the crew based next door in Waianae. Sloped-lot and beachfront experience. Free estimates: 808-499-8562.",
+    metaDesc: "Concrete driveways, patios and slabs in Makaha from the crew based next door in Waianae. Sloped-lot and beachfront experience. Free estimates: 808-207-7363.",
     intro: "Makaha is five minutes up the coast from our Waianae shop, and we treat it like an extension of home. From beachfront lots near Makaha Beach to homes up in Makaha Valley, we pour concrete built for this end of the island.",
     about: [
       "Makaha's terrain runs from sandy ground near the shoreline to sloped lots as the valley climbs toward Mount Kaala. That range means grading and drainage decisions matter more here than in flat subdivisions, and we make them on every driveway and patio we build.",
@@ -255,7 +255,7 @@ export const locationDetail = {
 
   "concrete-contractor-maili": {
     metaTitle: "Concrete Contractor Maili HI | Cruz Control Concrete",
-    metaDesc: "Maili concrete work from your Waianae neighbors. Driveways, patios, slabs and hollow tile walls, built for coastal lots. Free estimates: 808-499-8562.",
+    metaDesc: "Maili concrete work from your Waianae neighbors. Driveways, patios, slabs and hollow tile walls, built for coastal lots. Free estimates: 808-207-7363.",
     intro: "Maili sits right between our Waianae shop and Nanakuli, which makes it about the easiest service call we have. We pour driveways, patios, and slabs for Maili homes facing the same sun and salt we build for every day.",
     about: [
       "Most of Maili runs flat along the coast, from Maili Beach Park back toward the ridge, with a mix of older homes and newer builds in Sea Country up the hill. Flat coastal lots make for clean, efficient concrete work when the base is prepped right, and that is where we put the effort.",
@@ -285,7 +285,7 @@ export const locationDetail = {
 
   "concrete-contractor-nanakuli": {
     metaTitle: "Concrete Contractor Nanakuli HI | Cruz Control Concrete",
-    metaDesc: "Nanakuli concrete contractor from nearby Waianae. Driveway replacement, slabs, patios and block walls for Leeward homes. Free estimates: 808-499-8562.",
+    metaDesc: "Nanakuli concrete contractor from nearby Waianae. Driveway replacement, slabs, patios and block walls for Leeward homes. Free estimates: 808-207-7363.",
     intro: "Nanakuli is fifteen minutes from our Waianae shop, and its mix of longtime family homes and newer construction keeps us busy with everything from fresh slabs to full driveway replacements.",
     about: [
       "Many Nanakuli properties have been in families for generations, with original concrete that has done decades of work and earned its retirement. We replace worn driveways and slabs cleanly, and we are just as comfortable pouring new work for homes going up in the valley and along the homestead lands.",
@@ -306,7 +306,7 @@ export const locationDetail = {
       { q: "Do you serve Nanakuli?", a: "Yes. Nanakuli is part of our home Leeward coast territory, minutes from our Waianae shop. Driveways, patios, slabs, and block walls, we do them all here." },
       { q: "My driveway is original to the house. Repair or replace?", a: "If it is decades old with widespread cracking or settling, replacement usually beats chasing repairs. If the damage is limited and the base is sound, repair can make sense. We give you the honest read at the estimate." },
       { q: "Do you build hollow tile walls in Nanakuli?", a: "Yes, property line walls, privacy walls, and retaining walls. Every wall starts with a proper footing and gets steel and grout where the design calls for it." },
-      { q: "How do I get an estimate?", a: "Call or text 808-499-8562 or use the form on this page. We will set a time, walk the project with you, and get you a clear written estimate with no obligation." },
+      { q: "How do I get an estimate?", a: "Call or text 808-207-7363 or use the form on this page. We will set a time, walk the project with you, and get you a clear written estimate with no obligation." },
       { q: "How long does a hollow tile wall take to build?", a: "A typical residential wall runs one to two weeks depending on length and height: footing excavation and pour, block laying, grouting, and caps. Retaining walls add drainage work behind the wall. We map the schedule out at the estimate." },
       { q: "Can you work around our family's schedule?", a: "Yes. We set start times and site logistics around what works for your household, keep the work area contained, and make sure vehicles have a place to park while the driveway cures." },
       { q: "Can we split a bigger project into phases?", a: "Yes. We design phased projects so each stage stands on its own and the next one ties in cleanly, with joints and elevations planned from the start. Many Nanakuli families build this way, and it costs little extra to plan for correctly up front." },
@@ -315,7 +315,7 @@ export const locationDetail = {
 
   "concrete-contractor-kapolei": {
     metaTitle: "Concrete Contractor Kapolei HI | Cruz Control Concrete",
-    metaDesc: "Kapolei concrete contractor for driveways, patios, slabs and stamped finishes. Clean work that fits new subdivisions. Free estimates: 808-499-8562.",
+    metaDesc: "Kapolei concrete contractor for driveways, patios, slabs and stamped finishes. Clean work that fits new subdivisions. Free estimates: 808-207-7363.",
     intro: "Kapolei is Oahu's second city, and its newer homes deserve concrete that matches. We pour driveways, patios, and slabs across Kapolei's subdivisions with the clean lines and consistent finishes these neighborhoods expect.",
     about: [
       "From Makakilo on the hillside to Kapolei Knolls, Mehana, and the newer communities spreading toward Ho'opili, Kapolei construction is younger than most of the island. That cuts both ways: yards are ready for patios and extensions, and original builder-grade concrete is starting to show its age in the older subdivisions.",
@@ -345,7 +345,7 @@ export const locationDetail = {
 
   "concrete-contractor-ko-olina": {
     metaTitle: "Concrete Contractor Ko Olina HI | Cruz Control Concrete",
-    metaDesc: "Resort-grade concrete in Ko Olina. Stamped patios, pool surrounds, decorative driveways and courtyards. Free estimates: call 808-499-8562.",
+    metaDesc: "Resort-grade concrete in Ko Olina. Stamped patios, pool surrounds, decorative driveways and courtyards. Free estimates: call 808-207-7363.",
     intro: "Ko Olina properties are built to a resort standard, and the concrete should be too. We deliver stamped, colored, and decorative work for Ko Olina homes that looks like it belongs beside the lagoons.",
     about: [
       "From residences near the marina to homes around the golf club, Ko Olina projects lean decorative: pool surrounds, courtyard entries, stamped patios, and driveways that carry the home's design to the street. This is exactly the work we like most, where finish quality is the whole point.",
@@ -376,7 +376,7 @@ export const locationDetail = {
 
   "concrete-contractor-ewa-beach": {
     metaTitle: "Concrete Contractor Ewa Beach HI | Cruz Control Concrete",
-    metaDesc: "Ewa Beach driveways, patios and slabs built on properly compacted coral soil. Serving Ewa Gentry and Ocean Pointe. Free estimates: 808-499-8562.",
+    metaDesc: "Ewa Beach driveways, patios and slabs built on properly compacted coral soil. Serving Ewa Gentry and Ocean Pointe. Free estimates: 808-207-7363.",
     intro: "Ewa Beach's flat lots and growing neighborhoods make it one of Oahu's best places to add concrete, and one of the busiest parts of our schedule. We pour driveways, patios, and slabs across Ewa built on base prep the coral plain demands.",
     about: [
       "Ewa sits on old sugarcane plain: flat, sunny, and underlain by coral and sandy soils. Flat ground makes for efficient pours and big usable yards, which is why patio and driveway extensions are so popular from Ewa Gentry to Ocean Pointe and Ewa Villages. But coral ground punishes lazy compaction, so our prep standard is what separates a slab that stays flat from one that settles.",
@@ -397,7 +397,7 @@ export const locationDetail = {
       { q: "Do you serve Ewa Beach and Ocean Pointe?", a: "Yes, all of Ewa: Ewa Gentry, Ocean Pointe, Ewa Villages, Iroquois Point, and Hoakalei. It is about thirty minutes from our Waianae shop and we are here weekly." },
       { q: "Why does soil prep matter so much in Ewa?", a: "The area sits on coral and sandy ground from its plantation days. It drains well but settles if it is not compacted correctly, so base prep is where an Ewa slab succeeds or fails. We do it right the first time." },
       { q: "Can you extend my patio or add a parking pad?", a: "Yes, extensions are some of our most common Ewa Beach jobs. Flat lots make it easy to add usable space, and we tie new concrete to old with doweled connections and matched elevations." },
-      { q: "How soon can you start an Ewa Beach project?", a: "Estimates usually happen within the week, and project start depends on the current schedule and any permit needs. Call 808-499-8562 and we will give you real dates, not vague promises." },
+      { q: "How soon can you start an Ewa Beach project?", a: "Estimates usually happen within the week, and project start depends on the current schedule and any permit needs. Call 808-207-7363 and we will give you real dates, not vague promises." },
       { q: "Can I get a stamped patio in Ewa Beach?", a: "Yes, stamped and colored patios are among our most common Ewa Beach projects. We bring pattern and color samples to the estimate, and every decorative pour gets a UV-stable sealer suited to Ewa's full-sun exposure." },
       { q: "How thick will my new driveway be?", a: "Residential driveways are typically poured at four inches with steel reinforcement, thicker where trucks or trailers will park. The real key in Ewa is base compaction, which we treat as the most important part of the job." },
       { q: "Does Ewa's heat affect the pour?", a: "It affects the schedule, not the quality, when it is planned for. We pour early in the morning, use enough finishers for the slab size, and protect the cure so the surface gains strength evenly. Rushing concrete in full Ewa sun is how other crews get cracks; we simply do not let it happen." },
@@ -406,7 +406,7 @@ export const locationDetail = {
 
   "concrete-contractor-waipahu": {
     metaTitle: "Concrete Contractor Waipahu HI | Cruz Control Concrete",
-    metaDesc: "Waipahu concrete contractor for driveway replacement, slabs, patios and walls. Serving Village Park, Royal Kunia and Waikele. Free estimates: 808-499-8562.",
+    metaDesc: "Waipahu concrete contractor for driveway replacement, slabs, patios and walls. Serving Village Park, Royal Kunia and Waikele. Free estimates: 808-207-7363.",
     intro: "Waipahu is central Oahu's working core, full of established neighborhoods where original concrete has put in forty or fifty years of service. We replace, upgrade, and expand that concrete every week.",
     about: [
       "From the older plantation-era streets near the sugar mill to Village Park, Royal Kunia, and Waikele up the hill, Waipahu spans generations of construction. The common thread is concrete that has been worked hard: driveways carrying multiple household vehicles, slabs under add-ons, and walkways that have settled with time.",
@@ -436,7 +436,7 @@ export const locationDetail = {
 
   "concrete-contractor-pearl-city": {
     metaTitle: "Concrete Contractor Pearl City | Cruz Control Concrete",
-    metaDesc: "Pearl City concrete built for hillside lots. Sloped driveways, retaining walls, slabs and patios above Pearl Harbor. Free estimates: 808-499-8562.",
+    metaDesc: "Pearl City concrete built for hillside lots. Sloped driveways, retaining walls, slabs and patios above Pearl Harbor. Free estimates: 808-207-7363.",
     intro: "Pearl City climbs the hillside above Pearl Harbor, which makes grading and drainage the first conversation on almost every project. We build sloped driveways, retaining walls, and terraced flatwork that hold their grade.",
     about: [
       "From Pearl City proper up through Pearl City Heights, Pacific Palisades, and Manana, most lots here carry some slope. That changes how concrete gets built: driveways need grip and controlled runoff, patios often need cut-and-fill or a retaining wall to create flat space, and every pour needs a plan for where the water goes.",
@@ -466,7 +466,7 @@ export const locationDetail = {
 
   "concrete-contractor-aiea": {
     metaTitle: "Concrete Contractor Aiea HI | Cruz Control Concrete",
-    metaDesc: "Aiea concrete contractor for older-home driveway replacement, slabs, steps and retaining walls, from Halawa to Aiea Heights. Free estimates: 808-499-8562.",
+    metaDesc: "Aiea concrete contractor for older-home driveway replacement, slabs, steps and retaining walls, from Halawa to Aiea Heights. Free estimates: 808-207-7363.",
     intro: "Aiea's established neighborhoods climb from Pearl Harbor up to Aiea Heights, and much of the concrete here dates back generations. We give those properties new driveways, steps, walls, and slabs built to modern standards.",
     about: [
       "Between Halawa, Newtown, and the streets winding up toward Aiea Heights Drive, this is one of Oahu's most established communities. Original driveways were often built narrower and thinner than what today's households need, and decades of hillside water have found the weak spots in old walls and steps.",
@@ -490,14 +490,14 @@ export const locationDetail = {
       { q: "How far is Aiea from your shop?", a: "About forty minutes from Waianae. We batch our central-Oahu scheduling so Aiea projects get full crew days, not squeezed half-days." },
       { q: "Do retaining walls in Aiea need permits?", a: "Most structural retaining walls do, with requirements depending on height and what the wall holds back. The City and County of Honolulu handles all Oahu permitting, and we walk you through exactly what your wall needs before work begins." },
       { q: "How long does a steps-and-walkway project take?", a: "Most step and walkway renewals wrap in two to four working days, including demolition of the old concrete. Steps are ready for careful use after about two days and full use within a week." },
-      { q: "How soon can you look at a safety issue like a leaning wall?", a: "Fast, usually within days. Call 808-499-8562 and describe what you are seeing. Leaning walls and badly settled steps get priority scheduling, and we will tell you plainly whether it needs immediate work or can safely wait for a planned project." },
+      { q: "How soon can you look at a safety issue like a leaning wall?", a: "Fast, usually within days. Call 808-207-7363 and describe what you are seeing. Leaning walls and badly settled steps get priority scheduling, and we will tell you plainly whether it needs immediate work or can safely wait for a planned project." },
       { q: "Do you work around Pearlridge traffic?", a: "Yes, scheduling around it is second nature. Material deliveries and demo haul-offs get timed outside the worst Kamehameha Highway windows, so trucks are never idling in front of your house and the crew's day starts on time." },
     ],
   },
 
   "concrete-contractor-mililani": {
     metaTitle: "Concrete Contractor Mililani HI | Cruz Control Concrete",
-    metaDesc: "Mililani concrete contractor for clean driveways, patios and slabs that meet association standards, Town and Mauka. Free estimates: 808-499-8562.",
+    metaDesc: "Mililani concrete contractor for clean driveways, patios and slabs that meet association standards, Town and Mauka. Free estimates: 808-207-7363.",
     intro: "Mililani is a planned community with real standards, and homeowners here expect concrete work that meets them. We pour driveways, patios, and slabs across Mililani Town and Mililani Mauka with the clean, consistent finish the neighborhood is known for.",
     about: [
       "Between Mililani Town and the newer Mauka side, this community was built in coordinated phases, which means whole streets often share the same era of original concrete. As those driveways and walkways age together, we spend a lot of days here replacing and upgrading them with work that keeps the street's uniform look.",
@@ -527,7 +527,7 @@ export const locationDetail = {
 
   "concrete-contractor-honolulu": {
     metaTitle: "Concrete Contractor Honolulu HI | Cruz Control Concrete",
-    metaDesc: "Residential concrete in Honolulu, from Kalihi to Kaimuki to Manoa. Driveways, slabs, walls and tight-access pours. Free estimates: call 808-499-8562.",
+    metaDesc: "Residential concrete in Honolulu, from Kalihi to Kaimuki to Manoa. Driveways, slabs, walls and tight-access pours. Free estimates: call 808-207-7363.",
     intro: "Honolulu's neighborhoods pack a lot of variety into a few miles: valley homes in Manoa, hillside streets above Kalihi, tight urban lots in Kaimuki. We bring west-side craftsmanship into town for residential concrete of every shape.",
     about: [
       "Working in town means working around constraints. Lots are tighter, access is narrower, street parking is contested, and many homes sit on grades. We plan pours around all of it: pump trucks where mixers cannot reach, traffic-conscious scheduling, and crews that keep compact job sites clean because there is nowhere to hide a mess in the city.",
@@ -557,7 +557,7 @@ export const locationDetail = {
 
   "concrete-contractor-kahala": {
     metaTitle: "Concrete Contractor Kahala HI | Cruz Control Concrete",
-    metaDesc: "Finish-first concrete for Kahala homes. Decorative driveways, courtyards, pool decks and entries near Diamond Head. Free estimates: 808-499-8562.",
+    metaDesc: "Finish-first concrete for Kahala homes. Decorative driveways, courtyards, pool decks and entries near Diamond Head. Free estimates: 808-207-7363.",
     intro: "Kahala homes are finished to a standard, and concrete is part of that finish. We deliver decorative driveways, courtyards, pool surrounds, and entry work precise enough for one of Oahu's most refined neighborhoods.",
     about: [
       "Along Kahala Avenue and the streets between Waialae and the shoreline, properties put real weight on presentation. Concrete here is rarely just functional: it is the entry court guests arrive on, the pool deck the house opens onto, the driveway that frames the landscaping. Our decorative capabilities, stamped work, integral color, exposed aggregate, and hand-detailed borders, are built for exactly this.",
@@ -588,7 +588,7 @@ export const locationDetail = {
 
   "concrete-contractor-hawaii-kai": {
     metaTitle: "Concrete Contractor Hawaii Kai | Cruz Control Concrete",
-    metaDesc: "Hawaii Kai concrete for marina-side homes. Patios, driveways, pool decks and slabs built for salt and moisture. Free estimates: call 808-499-8562.",
+    metaDesc: "Hawaii Kai concrete for marina-side homes. Patios, driveways, pool decks and slabs built for salt and moisture. Free estimates: call 808-207-7363.",
     intro: "Hawaii Kai living happens outdoors, on patios, pool decks, and lanais facing the marina and Koko Head. We build that outdoor concrete to a premium standard, engineered for the salt and moisture that come with waterfront living.",
     about: [
       "From marina-front homes to Portlock and the ridge neighborhoods climbing toward Koko Head, Hawaii Kai properties mix premium expectations with genuinely tough exposure. Water is everywhere: the marina, the ocean, and the moisture that both put into the air. Concrete near it needs correct cover over steel, sealers chosen for the environment, and drainage that never lets water sit.",
@@ -619,7 +619,7 @@ export const locationDetail = {
 
   "concrete-contractor-kailua": {
     metaTitle: "Concrete Contractor Kailua HI | Cruz Control Concrete",
-    metaDesc: "Kailua concrete built for windward rain and salt. Patios, driveways, slabs and walls from Lanikai to Enchanted Lake. Free estimates: 808-499-8562.",
+    metaDesc: "Kailua concrete built for windward rain and salt. Patios, driveways, slabs and walls from Lanikai to Enchanted Lake. Free estimates: 808-207-7363.",
     intro: "The windward side plays by different weather rules, and Kailua concrete has to respect them. We build patios, driveways, slabs, and walls from Lanikai to Enchanted Lake that stand up to trade-wind rain and beach-town salt.",
     about: [
       "Kailua gets meaningfully more rain than the leeward coast, and the trades carry salt well inland from the beach. That combination shapes every decision: surfaces need grip for frequent wet, drainage has to move real volume, and finishes and reinforcement need the same coastal discipline we practice at home in Waianae.",

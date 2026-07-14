@@ -64,7 +64,7 @@ hero: "driveway-paver.jpg"
 
 <p>Cruz Control Concrete Hawaii is a family-operated business based in Waianae, serving residential clients across Oahu for over 12 years. From Ewa Beach and Ko Olina to Honolulu, Kailua, and the North Shore, we specialize in concrete flatwork built for the specific demands of island living.</p>
 
-<p>We offer free, no-obligation estimates. <a href='https://cruzcontrolconcretehawaii.com/contact/'>Contact us</a> to schedule a site visit and get a clear picture of what your project involves before committing to anything. Call us at 808-499-8562.</p>
+<p>We offer free, no-obligation estimates. <a href='https://cruzcontrolconcretehawaii.com/contact/'>Contact us</a> to schedule a site visit and get a clear picture of what your project involves before committing to anything. Call us at 808-207-7363.</p>
 
 <h2>Frequently Asked Questions</h2>
 

@@ -111,4 +111,4 @@ hero: "deck-patio.jpg"
 
 <h2>Ready to upgrade your outdoor space?</h2>
 
-<p>A stamped concrete patio adds usable living space and lasting value to your Kapolei home, and it is built to handle everything the island throws at it. Call Cruz Control Concrete Hawaii at 808-499-8562 or <a href="/contact/">reach out for a free estimate</a> to start designing yours.</p>
+<p>A stamped concrete patio adds usable living space and lasting value to your Kapolei home, and it is built to handle everything the island throws at it. Call Cruz Control Concrete Hawaii at 808-207-7363 or <a href="/contact/">reach out for a free estimate</a> to start designing yours.</p>

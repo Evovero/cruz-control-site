@@ -2,8 +2,8 @@
 export const biz = {
   name: "Cruz Control Concrete Hawaii",
   owner: "Travis Cruz",
-  phone: "808-499-8562",
-  phoneHref: "tel:8084998562",
+  phone: "808-207-7363",
+  phoneHref: "tel:8082077363",
   email: "cruzcontrol.hi@gmail.com",
   street: "87-595 Manuu St",
   city: "Waianae",
