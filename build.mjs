@@ -134,6 +134,7 @@ const estimateForm = (heading="Request a Free Estimate")=>`
     <label><input type="checkbox" name="contact" value="Call"> Call</label>
     <label><input type="checkbox" name="contact" value="Text"> Text</label>
     <label><input type="checkbox" name="contact" value="Email"> Email</label></div></div>
+  <div class="field"><label>Project Address <span class="opt">(optional, helps us plan the estimate)</span></label><input name="address" placeholder="Street address of the project"></div>
   <div class="field"><label>What do you need?*</label><textarea name="project" placeholder="Tell us about your project (type of work, size, timing)" required></textarea></div>
   <button class="btn btn--primary" type="submit" style="width:100%">Request My Estimate</button>
   <p class="formdisc">No pressure, no spam. We'll reach out the way you prefer. By submitting, you agree to be contacted about your request. We never sell your info.</p>
