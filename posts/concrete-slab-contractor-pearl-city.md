@@ -73,7 +73,7 @@ hero: "big-pour.jpg"
 
 <p>Cruz Control is familiar with residential permitting across Oahu. We can explain what inspections are typically required and how our work fits into the timeline, but the permit is pulled by the homeowner or their general contractor.</p>
 
-<p>Smaller utility slabs under 200 square feet, like a basic shed pad, often don't require a permit. It's always worth confirming with DPP before you start, since requirements can vary by zone and project type.</p>
+<p>Permit rules for a shed pad or small utility slab depend on the project, so confirm with the City and County of Honolulu Department of Planning and Permitting (DPP) before you start.</p>
 
 <h2>Why Pearl City Homeowners Choose Cruz Control</h2>
 
@@ -90,7 +90,7 @@ hero: "big-pour.jpg"
 <p>Yes. High heat speeds up the hydration process, which reduces the window for finishing work. Experienced crews adjust their mix design and schedule pours for cooler parts of the day. High humidity can actually help curing by slowing surface evaporation, but direct sun and wind are the bigger risks to watch.</p>
 
 <h3>Do I need a permit for a concrete slab in Pearl City?</h3>
-<p>Most structural slabs, including garage floors and ADU foundations, require a permit from the City and County of Honolulu. Smaller utility slabs under 200 square feet may be exempt, but you should verify with DPP before starting. The permit process timeline varies, so starting early is important for keeping your project on schedule.</p>
+<p>Most structural slabs, including garage floors and ADU foundations, are part of a project that needs a permit from the City and County of Honolulu. Smaller projects may be exempt, so verify with DPP before starting. The permit process timeline varies, so starting early is important for keeping your project on schedule.</p>
 
 <h3>How long does a concrete slab take to cure before I can use it?</h3>
 <p>Concrete reaches roughly 70 percent of its design strength by day seven and full design strength at 28 days. Light foot traffic is typically fine after 24 to 48 hours. You can drive on a garage slab after about a week, but heavy loads and vehicle turning should wait for the full 28-day cure.</p>
