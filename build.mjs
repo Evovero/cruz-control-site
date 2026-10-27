@@ -85,7 +85,7 @@ function footer(){
   </div></footer>`;
 }
 
-function layout({title,desc,slug,body,schema='',preloadImg=''}){
+function layout({title,desc,slug,body,schema='',preloadImg='',noindex=false}){
   const url = `${biz.domain}/${slug?slug+'/':''}`;
   return `<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
@@ -97,7 +97,7 @@ function layout({title,desc,slug,body,schema='',preloadImg=''}){
   gtag('js', new Date());
   gtag('config', 'G-XVWCFCR24Q');
 </script><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(title)}</title>
+${noindex?'<meta name="robots" content="noindex">\n':''}<title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
@@ -122,7 +122,7 @@ document.addEventListener('input',function(e){if(e.target&&e.target.type==='tel'
 
 /* ---------- reusable blocks ---------- */
 const estimateForm = (heading="Request a Free Estimate")=>`
-<form class="formwrap" name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/?ok=1">
+<form class="formwrap" name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
   <input type="hidden" name="form-name" value="estimate"><p class="hp"><label>Don't fill <input name="bot-field"></label></p>
   <h3>${esc(heading)}</h3><p class="formsub">Fill out the form and we'll reach out shortly to schedule it.</p>
   <div class="frow">
@@ -441,6 +441,15 @@ mkdirSync(OUT,{recursive:true});
 function copyDir(src,dst){ mkdirSync(dst,{recursive:true}); for(const e of readdirSync(src)){ const s=join(src,e),d=join(dst,e); if(statSync(s).isDirectory()) copyDir(s,d); else writeFileSync(d, readFileSync(s)); } }
 copyDir('public', OUT);
 
+function thankYou(){
+  const body=`<section class="hero">${heroBg('deck-view-1.jpg')}<div class="container">
+    <p class="eyebrow" style="color:#9fd4dd">Request received</p><h1>Got it. We'll be in touch soon.</h1>
+    <p>Your estimate request came through. If it's urgent, call or text <span style="white-space:nowrap">${esc(biz.phone)}</span>.</p>
+    <div class="actions"><a class="btn btn--primary" href="/">Back to home</a><a class="btn btn--ghost" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
+  </div></section>`;
+  return layout({title:`Thank You | ${biz.name}`,desc:`Your estimate request reached Cruz Control Concrete Hawaii. If it's urgent, call or text ${biz.phone}.`,slug:'thank-you',body,noindex:true});
+}
+
 function notFound(){
   const body=`<section class="hero">${heroBg('deck-view-1.jpg')}<div class="container">
     <p class="eyebrow" style="color:#9fd4dd">404</p><h1>That page poured somewhere else</h1>
@@ -468,6 +477,7 @@ const posts = readPosts();
 posts.forEach(p=>page('blog/'+p.slug, postPage(p)));
 page('blog', blogIndex());
 writeFileSync(join(OUT,'404.html'), notFound());
+page('thank-you', thankYou());
 
 // sitemap + robots
 const urls = ['', 'concrete-services','service-areas','about-us','contact','blog',

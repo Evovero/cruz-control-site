@@ -23,9 +23,10 @@
     }
   }, true);
 
-  // This site has no dedicated thank-you page. The form already redirects to
-  // /contact/?ok=1 on success, so that query param IS the confirmation signal.
-  if (location.pathname.indexOf('/contact') === 0 && location.search.indexOf('ok=1') !== -1) {
+  // The form redirects to /thank-you/ on success (added 2026-10-27; before that it
+  // went to /contact/?ok=1, which is still honored for old cached forms).
+  if (location.pathname.indexOf('/thank-you') === 0 ||
+      (location.pathname.indexOf('/contact') === 0 && location.search.indexOf('ok=1') !== -1)) {
     track('generate_lead_confirmed', { page_path: location.pathname });
   }
 })();
