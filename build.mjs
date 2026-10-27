@@ -463,7 +463,7 @@ function notFound(){
       <div class="tile"><h3>Free Estimate</h3><p><a href="/contact/">Request a free, no-obligation estimate</a> and we will reach out fast.</p></div>
     </div>
   </div></section>`;
-  return layout({title:`Page Not Found | ${biz.name}`,desc:`That page does not exist. Find concrete services, service areas, and free estimates from Cruz Control Concrete Hawaii.`,slug:'404',body});
+  return layout({title:`Page Not Found | ${biz.name}`,desc:`That page does not exist. Find concrete services, service areas, and free estimates from Cruz Control Concrete Hawaii.`,slug:'404',body,noindex:true});
 }
 
 page('', home());
