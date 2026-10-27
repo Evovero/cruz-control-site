@@ -228,7 +228,7 @@ function home(){
   </div></section>
 
   ${ctaBand()}`;
-  return layout({title:`Oahu Concrete Contractor | Cruz Control Concrete Hawaii`,desc:`Concrete driveways, patios, slabs and custom finishes across Oahu. Based in Waianae with 12+ years of island experience. Free estimates: ${biz.phone}.`,slug:'',body,preloadImg:IMG+'driveway-prep.jpg'});
+  return layout({title:`Oahu Concrete Contractor | Cruz Control Concrete Hawaii`,desc:`Concrete driveways, patios, slabs and custom finishes across Oahu. Based in Waianae with 12+ years of island experience. Free estimates: call ${biz.phone}.`,slug:'',body,preloadImg:IMG+'driveway-prep.jpg'});
 }
 
 function servicePage(s){
@@ -280,7 +280,7 @@ function servicesHub(){
     <p class="lead">Projects pair naturally: a new driveway with the property wall beside it, a patio with the seat wall that finishes it, a slab with the steps that reach it. Bundling that work into one project shares the mobilization cost and keeps every finish matched. Tell us everything you are considering at the <a href="/contact/">free estimate</a> and we will price it as one clean job, or call <a href="${biz.phoneHref}">${esc(biz.phone)}</a>.</p>
   </div></section>
   <section class="section section--sand"><div class="container"><div class="grid grid-3">${cards}</div></div></section>${ctaBand()}`;
-  return layout({title:`Concrete Services on Oahu | ${biz.name}`,desc:`Residential concrete services on Oahu: driveways, patios, slabs, custom & decorative concrete, and masonry. Free estimates. Call ${biz.phone}.`,slug:'concrete-services',body,preloadImg:IMG+'deck-view-1.jpg'});
+  return layout({title:`Concrete Services on Oahu | ${biz.name}`,desc:`Residential concrete services on Oahu: driveways, patios, slabs, custom & decorative concrete, and masonry. Call or text ${biz.phone} today for a free estimate.`,slug:'concrete-services',body,preloadImg:IMG+'deck-view-1.jpg'});
 }
 
 function locationPage(l,i=0){
@@ -340,7 +340,7 @@ function areasHub(){
     <div class="areas-list">${byTier(3)}</div>
     <p class="lead mt">Do not see your neighborhood by name? If it is on Oahu, we likely serve it, the towns above are anchors, not borders. Call <a href="${biz.phoneHref}">${esc(biz.phone)}</a> or <a href="/contact/">request a free estimate</a> and tell us where the project is.</p>
   </div></section>${ctaBand()}`;
-  return layout({title:`Service Areas on Oahu | ${biz.name}`,desc:`Cruz Control Concrete Hawaii serves all of Oahu, including Waianae, Kapolei, Ewa Beach, Honolulu, Kailua and more. Free estimates. Call ${biz.phone}.`,slug:'service-areas',body,preloadImg:IMG+'deck-view-2.jpg'});
+  return layout({title:`Our Service Areas on Oahu | ${biz.name}`,desc:`Cruz Control Concrete Hawaii serves all of Oahu, including Waianae, Kapolei, Ewa Beach, Honolulu, Kailua and more. Call ${biz.phone} today for a free estimate.`,slug:'service-areas',body,preloadImg:IMG+'deck-view-2.jpg'});
 }
 
 function about(){
@@ -348,7 +348,7 @@ function about(){
   <section class="section"><div class="container split"><div><p class="eyebrow">Who we are</p><h2>Craftsmanship you can count on</h2>
   <p class="lead">Cruz Control Concrete Hawaii specializes in residential flatwork built for Hawaii's climate and soil. We focus on proper preparation, precise installation, and clean finishing on every job.</p>
   <ul class="checks"><li>${esc(biz.yearsExp)} years of hands-on experience</li><li>Residential flatwork specialists</li><li>Based in Waianae, serving all of Oahu</li><li>Honest recommendations and clear communication</li></ul></div>${pic('deck-house.jpg','Cruz Control Concrete Hawaii finished concrete work on Oahu')}</div></section>${ctaBand()}`;
-  return layout({title:`About Our Waianae Concrete Crew | Cruz Control Concrete`,desc:`Cruz Control Concrete Hawaii is a Waianae based crew pouring driveways, patios and slabs across Oahu for 12+ years. Free estimates: call ${biz.phone}.`,slug:'about-us',body,preloadImg:IMG+'crew-night-pour.jpg'});
+  return layout({title:`About Our Waianae Concrete Crew | Cruz Control Concrete`,desc:`Cruz Control Concrete Hawaii is a Waianae based crew pouring driveways, patios and slabs across Oahu for 12+ years. Call ${biz.phone} today for a free estimate.`,slug:'about-us',body,preloadImg:IMG+'crew-night-pour.jpg'});
 }
 
 function contact(){
@@ -360,7 +360,7 @@ function contact(){
     <strong>Email:</strong> ${esc(biz.email)}<br>
     <strong>Address:</strong> ${esc(addr)}<br>
     <strong>Hours:</strong> ${esc(biz.hours)}</p></div></div></section>`;
-  return layout({title:`Contact | Free Estimate | ${biz.name}`,desc:`Request a free concrete estimate on Oahu. Call or text ${biz.phone}, or send the form and we will reach out fast. Serving Waianae and all of Oahu.`,slug:'contact',body,preloadImg:IMG+'fresh-slab.jpg'});
+  return layout({title:`Contact Us | Free Estimate | ${biz.name}`,desc:`Request a free concrete estimate on Oahu. Call or text ${biz.phone}, or send the form and we will reach out fast. Based in Waianae and serving all of Oahu.`,slug:'contact',body,preloadImg:IMG+'fresh-slab.jpg'});
 }
 
 /* ---------- blog ---------- */
@@ -426,7 +426,7 @@ function blogIndex(){
     : `<div class="center"><p class="lead" style="margin:0 auto">New posts are coming soon. Check back for concrete tips from the Cruz Control crew.</p></div>`;
   const body=`<section class="hero">${heroBg('concrete-steps.jpg')}<div class="container"><h1>Concrete Tips & Insights</h1><p>Guides and advice on concrete driveways, patios, slabs, and caring for concrete in Hawaii.</p></div></section>
   <section class="section"><div class="container">${list}</div></section>${ctaBand()}`;
-  return layout({title:`Concrete Tips for Oahu Homeowners | Cruz Control Concrete`,desc:`Practical concrete advice for Hawaii homes: driveways, patios, slabs and maintenance, from the Cruz Control crew in Waianae. Free estimates: ${biz.phone}.`,slug:'blog',body,preloadImg:IMG+'concrete-steps.jpg'});
+  return layout({title:`Concrete Tips for Oahu Homeowners | Cruz Control Concrete`,desc:`Practical concrete advice for Hawaii homes: driveways, patios, slabs and maintenance, from the Cruz Control crew in Waianae. Free estimates: call ${biz.phone}.`,slug:'blog',body,preloadImg:IMG+'concrete-steps.jpg'});
 }
 
 /* ---------- write ---------- */
