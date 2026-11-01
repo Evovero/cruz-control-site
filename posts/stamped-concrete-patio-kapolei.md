@@ -69,13 +69,13 @@ hero: "deck-patio.jpg"
 
 <h3>4. Curing and sealing</h3>
 
-<p>The slab needs time to cure before it carries weight. After curing, we apply a protective sealer that locks in the color, resists salt and UV, and makes the surface easier to clean. We will tell you exactly how long to stay off the new patio.</p>
+<p>The slab needs time to cure before it carries weight. After curing, we apply a protective sealer that locks in the color, helps the surface <a href="https://ascconline.org/Portals/ASCC/DCC_Sealer_Guide_Trifold_2012.pdf">resist stains and UV</a>, and makes the surface easier to clean. We will tell you exactly how long to stay off the new patio.</p>
 
 <h2>Caring for a stamped concrete patio in Hawaii</h2>
 
 <p>Stamped concrete is low maintenance, not no maintenance. Rinse it down to keep salt and dirt from building up, and clean spills before they stain. Reseal every few years, <a href="https://ascconline.org/Portals/ASCC/DCC_Sealer_Guide_Trifold_2012.pdf">depending on sun exposure and traffic</a>, to keep the color rich and the surface protected.</p>
 
-<p>Compared with pavers, there are no joints to weed and no sand to replace. Compared with a wood deck, there is nothing to sand, stain, or replace as boards warp in the humidity. That low upkeep is a big part of why west side homeowners choose it.</p>
+<p>Compared with pavers, there is no joint sand to weed or replace. Compared with a wood deck, there is nothing to sand, stain, or replace as boards warp in the humidity. That low upkeep is a big part of why west side homeowners choose it.</p>
 
 <h2>Working with a local Kapolei concrete crew</h2>
 

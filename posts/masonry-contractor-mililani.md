@@ -17,7 +17,7 @@ hero: "breeze-block-wall.jpg"
 <p>Repair and restoration work makes up a steady share of our masonry calls too. Older block walls around Mililani sometimes develop cracked mortar joints, leaning sections, or spalling surfaces after years of sun and rain exposure. Catching these issues early is usually a smaller job than waiting until a wall shifts enough to need a full rebuild.</p>
 
 <h2>Working With Oahu's Soil and Climate</h2>
-<p>Central Oahu's soil holds moisture differently than the sandier ground closer to the coast, and that affects how a retaining wall or masonry footing needs to be built. Proper drainage behind a retaining wall is not optional here. Without weep holes, gravel backfill, and a drainage layer, water pressure builds up behind the wall after heavy rain and pushes it out of position over time, sometimes within just a few years.</p>
+<p>Soil conditions vary across Oahu, and they affect how a retaining wall or masonry footing needs to be built. Proper drainage behind a retaining wall is not optional here. Without weep holes, gravel backfill, and a drainage layer, water pressure builds up behind the wall after heavy rain and pushes it out of position over time, sometimes within just a few years.</p>
 <p>Salt air is less of a factor in Mililani than it is along the coast, but the humidity and rainfall across the island still affect how mortar cures and how concrete block ages. We build every wall with drainage and curing conditions in mind rather than treating masonry the same way it might get built on the mainland.</p>
 
 <h2>Retaining Wall Height and Design Considerations</h2>

@@ -9,7 +9,7 @@ export const biz = {
   city: "Waianae",
   state: "HI",
   zip: "96792",
-  hours: "Mon–Sat 8am–11pm",
+  hours: "Mon to Sat, 8am to 11pm",
   yearsExp: "12+",
   domain: "https://cruzcontrolconcretehawaii.com",
   // Drop the Google Business Profile share URL / Maps CID link here when available.

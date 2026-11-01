@@ -68,7 +68,7 @@ export const serviceDetail = {
     },
     faqs: [
       { q: "How thick should a concrete patio be?", a: "Four inches is the standard for residential patios, with steel reinforcement and a compacted base underneath. If the patio will carry heavy features like a masonry kitchen or hot tub, we thicken the slab in those areas." },
-      { q: "Stamped concrete or pavers, which is better?", a: "Stamped concrete gives you a continuous, low-maintenance surface with no joints for weeds or shifting, which matters on Oahu's soils. Pavers can be repaired piece by piece but need ongoing attention. We are happy to talk through both at the estimate." },
+      { q: "Stamped concrete or pavers, which is better?", a: "Stamped concrete gives you a low maintenance surface with no joint sand to wash out and no loose pieces to shift. Pavers can be repaired piece by piece but need ongoing attention. We are happy to talk through both at the estimate." },
       { q: "How long before I can use my new patio?", a: "Foot traffic is fine after about 24 to 48 hours. Give it about a week before dragging heavy furniture back on, and we will confirm timing for your specific pour and finish." },
       { q: "Can you extend my existing lanai?", a: "Yes, lanai and slab extensions are some of our most common projects. We dowel the new slab into the old one and match elevations so the transition is clean and the two pours move together." },
       { q: "Do patios need to be sealed in Hawaii?", a: "Decorative and colored patios should be sealed with a UV-stable product and resealed every few years to keep the color true. Plain broom-finish patios can go unsealed, though sealing helps with stains and salt exposure near the coast." },

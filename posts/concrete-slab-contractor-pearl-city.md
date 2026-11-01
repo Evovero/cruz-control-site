@@ -48,7 +48,7 @@ hero: "big-pour.jpg"
 <p>We start every slab job with a site visit. We take measurements, assess drainage, and check for soft spots or saturated soil. If we find conditions that will affect the outcome, we address them before forming up, not after.</p>
 
 <h3>Subgrade Preparation</h3>
-<p>This is the step that most homeowners don't see but matters most. We remove soft material, compact the base, and add gravel where needed. In central Oahu's clay soils, a <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">well prepared subgrade</a> is one of the biggest factors in how long a slab lasts.</p>
+<p>This is the step that most homeowners don't see but matters most. We remove soft material, compact the base, and add gravel where needed. On clay soils, a <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">well prepared subgrade</a> is one of the biggest factors in how long a slab lasts.</p>
 
 <h3>Forming and Reinforcement</h3>
 <p>Wood or steel forms define the slab edges. Depending on the application, we install rebar grids, welded wire mesh, or fibermesh throughout the pour. We also plan control joints, which are tooled or saw-cut lines that <a href="https://www.nrmca.org/wp-content/uploads/2021/01/06pr.pdf">guide where the concrete cracks</a> if it needs to move with temperature or moisture changes.</p>

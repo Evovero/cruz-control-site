@@ -62,7 +62,7 @@ hero: "breeze-block-wall.jpg"
 
 <h2>Frequently Asked Questions</h2>
 <h3>How long does stamped concrete last in Hawaii?</h3>
-<p>With a proper base, correct joint spacing, and regular resealing, stamped concrete in Hawaii commonly lasts 25 to 30 years or more. The finish itself holds up as long as the slab does. Resealing every few years is the main maintenance task, and it is a quick, low-cost one.</p>
+<p>With a proper base, correct joint spacing, and regular resealing, stamped concrete can last for many years; <a href="https://www.nachi.org/life-expectancy.htm">home inspector estimates for concrete patios</a> run 15 to 25 years. The finish itself holds up as long as the slab does. Resealing every few years is the main maintenance task, and it is a quick, low-cost one.</p>
 <h3>Is stamped concrete slippery around pools?</h3>
 <p>It does not have to be. The stamp texture itself adds grip, and we can add a slip-resistant additive to the sealer for pool decks and wet areas. Combined with a lighter color that stays cooler underfoot, stamped concrete is a practical pool deck surface for Honolulu homes.</p>
 <h3>Will the color fade in the Honolulu sun?</h3>
@@ -70,6 +70,6 @@ hero: "breeze-block-wall.jpg"
 <h3>Can you make new concrete match an existing patio or driveway?</h3>
 <p>We can get very close. Concrete color varies with mix, weather, and age, so an exact match to a weathered slab is never guaranteed. We use color samples and test panels to land as close as possible, and design tricks like border bands can make any transition look intentional.</p>
 <h3>Is decorative concrete more work to maintain than pavers?</h3>
-<p>Generally it is less. A stamped slab is one continuous surface, so there are no joints to re-sand and no individual units to settle or shift. Maintenance is occasional cleaning and periodic resealing. Pavers can be repaired unit by unit, but they demand more routine upkeep in return.</p>
+<p>Generally it is less. A stamped slab has <a href="https://www.nrmca.org/wp-content/uploads/2021/01/06pr.pdf">far fewer joints than pavers</a>, with no joint sand to replace and no individual units to settle or shift. Maintenance is occasional cleaning and periodic resealing. Pavers can be repaired unit by unit, but they demand more routine upkeep in return.</p>
 
 <p>If you are thinking about stamped or custom concrete for your Honolulu home, our team is happy to walk the space, bring pattern and color samples, and give you straight answers about what will hold up on your site. <a href="https://cruzcontrolconcretehawaii.com/contact/">Request a free estimate</a> and we will get you on the schedule.</p>

@@ -41,7 +41,7 @@ hero: "deck-patio.jpg"
 
 <p>Concrete in Hawaii holds up well, but UV exposure and tropical rainfall are real factors. Sealing the surface <a href="https://ascconline.org/Portals/ASCC/DCC_Sealer_Guide_Trifold_2012.pdf">every two to three years</a> protects the finish and prevents staining from organic matter like leaves, bird droppings, and soil. For stamped or colored concrete, sealing also maintains the color vibrancy.</p>
 
-<p>We recommend a wide fan nozzle at moderate pressure for cleaning. These are simple maintenance habits that extend the life of the surface significantly.</p>
+<p>We recommend a wide fan nozzle at moderate pressure for cleaning. This is a simple habit that extends the life of the surface.</p>
 
 <p>We check sealer condition more often on coastal properties.</p>
 
