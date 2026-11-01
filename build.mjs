@@ -417,7 +417,15 @@ function postPage(p){
     <div class="post-body">${body}</div>
     <div class="mt" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn--primary" href="/contact/">Get a Free Estimate</a><a class="btn btn--dark" href="${biz.phoneHref}">Call ${esc(biz.phone)}</a></div>
   </div></section>${ctaBand()}`;
-  return layout({title:`${p.title} | ${biz.name}`,desc:p.description||p.title,slug:`blog/${p.slug}`,body:bodyHtml,schema,preloadImg:IMG+hero});
+  return layout({title:postTitle(p.title),desc:p.description||p.title,slug:`blog/${p.slug}`,body:bodyHtml,schema,preloadImg:IMG+hero});
+}
+// Blog <title> (2026-11-01): add a brand suffix only when the whole title still fits in 60 chars.
+// Was: every post got " | Cruz Control Concrete Hawaii", giving 86 to 124 char titles.
+// The autoblog brief aims each post title at 55 to 60 chars, so most posts render with no suffix.
+const TITLE_MAX=60;
+function postTitle(t){
+  for(const s of [` | ${biz.name}`,' | Cruz Control Concrete']){ if((t+s).length<=TITLE_MAX) return t+s; }
+  return t;
 }
 function blogIndex(){
   const posts=readPosts();
