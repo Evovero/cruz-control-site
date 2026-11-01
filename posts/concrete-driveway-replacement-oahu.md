@@ -9,7 +9,7 @@ hero: "driveway-paver.jpg"
 <p>If your concrete driveway is cracking across large sections, sinking unevenly, or crumbling at the edges, it is usually time for a full replacement rather than another patch. On Oahu, salt air, strong sun, and shifting soil speed up that wear. Below is how to tell the difference between a quick fix and a real replacement, and what the process looks like from start to finish.</p>
 
 <h2>Signs Your Oahu Driveway Needs Replacing</h2>
-<p>A few hairline cracks are normal and easy to seal. The problems below point to something deeper, usually in the base beneath the slab, and they tend to come back no matter how many times you patch them.</p>
+<p>A few <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">hairline cracks are normal</a> and easy to seal. The problems below point to something deeper, usually in the base beneath the slab, and they tend to come back no matter how many times you patch them.</p>
 <ul>
 <li><strong>Wide or spreading cracks</strong> that you can fit a coin into, especially ones that cross the whole slab.</li>
 <li><strong>Sunken or raised sections</strong> where panels no longer sit level with each other.</li>
@@ -21,7 +21,7 @@ hero: "driveway-paver.jpg"
 
 <h2>Why Driveways Wear Faster in Hawaii's Climate</h2>
 <p>Concrete is durable everywhere, but Oahu puts a unique set of stresses on it. Understanding why your driveway failed helps make sure the replacement lasts.</p>
-<p><strong>Salt air</strong> along the coast works its way into small cracks and corrodes the steel reinforcement inside the slab, which then expands and pushes the concrete apart. <strong>Intense sun</strong> drives surface temperatures up and accelerates shrinkage cracking. <strong>Heavy rain combined with expansive island soils</strong> causes the ground under the slab to swell and shrink, and a driveway is only as stable as the base it sits on.</p>
+<p><strong>Salt air</strong> along the coast works its way into small cracks and <a href="https://www.nrmca.org/wp-content/uploads/2021/01/25pr.pdf">corrodes the steel reinforcement inside</a> the slab, which then expands and pushes the concrete apart. <strong>Strong sun and heat during the pour</strong> dry the surface fast, which raises the risk of <a href="https://www.nrmca.org/wp-content/uploads/2021/01/12pr.pdf">early shrinkage cracking</a>. <strong>Some Oahu soils</strong>, like the Lualualei clay on the Waianae coast, <a href="https://www3.ctahr.hawaii.edu/oc/freepubs/pdf/soils_poster_3.pdf">shrink when dry and swell when wet</a>, and a driveway is only as stable as the base it sits on.</p>
 <p>Most failed driveways we replace were not bad concrete. They were good concrete poured over a base that was never prepped for these conditions. Proper <a href="/concrete-driveway-contractor/">driveway installation on Oahu</a> starts with grading, compaction, and drainage long before any concrete is mixed.</p>
 
 <h2>Repair or Replace: How to Decide</h2>
@@ -37,7 +37,7 @@ hero: "driveway-paver.jpg"
 <h3>3. Reinforcement and pour</h3>
 <p>We add reinforcement as needed, set forms and control joints to manage cracking, and pour a consistent, level slab using mixes suited to the job.</p>
 <h3>4. Finishing and curing</h3>
-<p>We finish the surface, whether a standard broom finish for traction or a decorative option, then let it cure properly. Curing is not optional. Rushing it is a common reason driveways fail early.</p>
+<p>We finish the surface, whether a standard broom finish for traction or a decorative option, then let it cure properly. <a href="https://www.nrmca.org/wp-content/uploads/2021/01/11pr.pdf">Curing is not optional</a>. Rushing it is a common reason driveways fail early.</p>
 
 <h2>Finish and Upgrade Options Worth Considering</h2>
 <p>A replacement is the right time to upgrade the look, since the cost of the finish is small compared to redoing the whole driveway later. Popular choices include a clean broom finish for grip, exposed borders, and <a href="/custom-concrete-contractor/">stamped and colored concrete</a> that mimics stone or pavers while keeping the strength of a solid slab. If you are weighing options across your property, our full range of <a href="/concrete-services/">concrete services</a> covers driveways, patios, and slabs together.</p>
@@ -48,15 +48,15 @@ hero: "driveway-paver.jpg"
 
 <h2>Frequently Asked Questions</h2>
 <h3>How long does a concrete driveway last on Oahu?</h3>
-<p>A properly installed concrete driveway can last 25 to 30 years or more on Oahu. The biggest factors are base preparation and drainage, not the concrete itself. Driveways that fail early almost always had a weak base or poor water runoff, both of which a quality replacement corrects.</p>
+<p>A properly installed concrete driveway <a href="https://www.nachi.org/life-expectancy.htm">can last for decades</a>. How long depends on the base, drainage, installation and care. Most early cracking <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">traces back to how the slab was built</a>, such as a poorly prepared base, rather than the concrete itself.</p>
 <h3>Can you replace just part of a driveway?</h3>
 <p>Sometimes. If the damage is limited to one section and the rest of the slab and base are sound, a partial replacement can work. When cracking is widespread or the base has failed, a full replacement is more reliable and usually the better value over time.</p>
 <h3>How long does a driveway replacement take?</h3>
 <p>Most residential driveway replacements take a few days, including removal, base work, and the pour, followed by a curing period. Timelines vary with the size of the driveway and site conditions. We give you a clear schedule before we start so there are no surprises.</p>
 <h3>How soon can I drive on a new concrete driveway?</h3>
-<p>You can usually walk on it within a day or two, but you should wait before parking vehicles on it so the concrete can reach enough strength. We tell you the exact timeline for your specific pour, since it depends on the mix, weather, and slab thickness.</p>
+<p>Wait until we confirm your slab is ready for foot traffic and for vehicles. The timing depends on the mix, the weather and the slab thickness.</p>
 <h3>Do I need a permit to replace a driveway on Oahu?</h3>
-<p>It depends on the scope and your location. A like-for-like replacement is often straightforward, while changes to size, grading, or drainage can require approval. We help homeowners understand what their specific project needs before work begins.</p>
+<p>It depends on the scope and your location. If the work changes the driveway apron, curb or sidewalk <a href="https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/">in the public street right of way</a>, the City requires a permit, and larger grading work can need <a href="https://www.honolulu.gov/dpp/permitting/sdd/ceb/">its own DPP grading permit</a>. We help you check what your project needs before work begins.</p>
 
 <h2>Ready to Replace Your Driveway?</h2>
 <p>If your driveway is showing the signs above, the sooner you address it, the less likely the damage is to spread to your base or landscaping. Cruz Control Concrete Hawaii builds durable replacements designed for Oahu conditions, from removal to final finish. <a href="/contact/">Request a free, no-obligation estimate</a> today, or call 808-499-8562 to talk through your project with a local concrete pro.</p>

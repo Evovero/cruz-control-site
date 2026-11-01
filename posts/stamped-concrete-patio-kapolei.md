@@ -14,7 +14,7 @@ hero: "deck-patio.jpg"
 
 <p>Stamped concrete is a single poured slab finished to mimic another material. Instead of setting dozens of individual stones or pavers, the crew pours one continuous patio, adds color, and presses patterned stamps into the surface before it cures. The result reads like flagstone, slate, wood plank, or tile, but behaves like a monolithic concrete pad.</p>
 
-<p>That difference matters in Hawaii. A solid slab has no joints for weeds to push through and no individual pieces to shift, sink, or wash out during a hard Leeward rain. It is one of the reasons stamped work has become a go-to for patios, lanai extensions, and pool decks on the west side.</p>
+<p>That difference matters in Hawaii. A stamped slab has <a href="https://www.nrmca.org/wp-content/uploads/2021/01/06pr.pdf">far fewer joints than pavers</a> and no loose pieces to shift or wash out. It is one of the reasons stamped work has become a go-to for patios, lanai extensions, and pool decks on the west side.</p>
 
 <h3>How the color and texture come together</h3>
 
@@ -24,19 +24,19 @@ hero: "deck-patio.jpg"
 
 <h2>Why stamped concrete works for Kapolei's climate</h2>
 
-<p>Kapolei sits on the dry, sunny side of Oahu, but it still gets strong UV exposure, occasional heavy downpours, and ocean salt carried on the trade winds. Each of those puts a different kind of stress on outdoor surfaces.</p>
+<p>Kapolei sits on <a href="https://www.weather.gov/hfo/climate_summary">the dry, sunny side of Oahu</a>, but it still gets strong UV exposure and occasional heavy downpours. Coastal homes are exposed to sea salt, and <a href="https://www.nrmca.org/wp-content/uploads/2021/01/25pr.pdf">chlorides can corrode the steel</a> inside concrete. Each of those puts a different kind of stress on outdoor surfaces.</p>
 
 <h3>Sun and UV</h3>
 
-<p>Constant sun fades cheaper surface coatings and can make some pavers brittle. Quality integral color holds its tone far longer because the pigment is part of the slab, not a thin layer on top. A UV-stable sealer adds another layer of protection and keeps the surface from chalking out.</p>
+<p>Integral color is <a href="https://www.pacaweb.org/uploads/documents/ColorConcrete.pdf">mixed through the concrete</a>, so it is not a thin layer that can wear off. A sealer adds a layer that helps the surface <a href="https://ascconline.org/Portals/ASCC/DCC_Sealer_Guide_Trifold_2012.pdf">resist staining and sun</a>.</p>
 
 <h3>Rain and drainage</h3>
 
-<p>When Kapolei gets rain, it tends to come fast. A stamped slab is poured with a deliberate slope so water runs off toward the yard or a drain instead of pooling against the house. We plan that slope before the first pour, because drainage problems are far harder to fix after the concrete has set.</p>
+<p>When Kapolei gets rain, <a href="https://www.weather.gov/hfo/climate_summary">it tends to come fast</a>. A stamped slab is poured with a deliberate slope so water runs off toward the yard or a drain instead of pooling against the house. We plan that slope before the first pour, because drainage problems are far harder to fix after the concrete has set.</p>
 
 <h3>Salt air and soil movement</h3>
 
-<p>Salt air is tough on metal fasteners and grout lines. A sealed concrete slab has neither. And because the patio is one connected piece reinforced with rebar or mesh, it resists the small soil shifts that can leave a paver patio uneven over time. For homeowners who want the same durability across a driveway or walkway, the same approach applies to all of our <a href="/concrete-patio-contractor/">patio installation</a> and flatwork.</p>
+<p>Salt air is tough on metal fasteners and grout lines. A sealed concrete slab has neither. A well compacted base keeps the slab stable, and <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">reinforcement helps hold any cracks tight</a>. For homeowners who want the same durability across a driveway or walkway, the same approach applies to all of our <a href="/concrete-patio-contractor/">patio installation</a> and flatwork.</p>
 
 <h2>Popular stamped patterns and finishes on Oahu</h2>
 
@@ -61,7 +61,7 @@ hero: "deck-patio.jpg"
 
 <h3>2. Reinforcement and pour</h3>
 
-<p>Rebar or wire mesh goes in to strengthen the slab, then we pour and screed the concrete to a level, even surface. On larger Kapolei patios we schedule the pour for the cooler part of the day so the mix does not flash off too quickly in the heat.</p>
+<p>Rebar or wire mesh goes in to strengthen the slab, then we pour and screed the concrete to a level, even surface. On larger Kapolei patios we schedule the pour for <a href="https://www.nrmca.org/wp-content/uploads/2021/01/12pr.pdf">the cooler part of the day</a> so the mix does not flash off too quickly in the heat.</p>
 
 <h3>3. Coloring and stamping</h3>
 
@@ -73,7 +73,7 @@ hero: "deck-patio.jpg"
 
 <h2>Caring for a stamped concrete patio in Hawaii</h2>
 
-<p>Stamped concrete is low maintenance, not no maintenance. Rinse it down to keep salt and dirt from building up, and clean spills before they stain. Reseal every few years, depending on sun exposure and traffic, to keep the color rich and the surface protected.</p>
+<p>Stamped concrete is low maintenance, not no maintenance. Rinse it down to keep salt and dirt from building up, and clean spills before they stain. Reseal every few years, <a href="https://ascconline.org/Portals/ASCC/DCC_Sealer_Guide_Trifold_2012.pdf">depending on sun exposure and traffic</a>, to keep the color rich and the surface protected.</p>
 
 <p>Compared with pavers, there are no joints to weed and no sand to replace. Compared with a wood deck, there is nothing to sand, stain, or replace as boards warp in the humidity. That low upkeep is a big part of why west side homeowners choose it.</p>
 
@@ -87,15 +87,15 @@ hero: "deck-patio.jpg"
 
 <h3>How long does a stamped concrete patio last in Hawaii?</h3>
 
-<p>With proper installation and routine sealing, a stamped concrete patio can last decades in Hawaii's climate. The slab itself is extremely durable. The main upkeep is resealing every few years to protect the color and surface from sun and salt exposure.</p>
+<p>With good installation and regular sealing, a stamped patio can last for many years; <a href="https://www.nachi.org/life-expectancy.htm">home inspector estimates for concrete patios</a> run 15 to 25 years. The slab itself is extremely durable. The main upkeep is resealing every few years to protect the color and surface from sun and salt exposure.</p>
 
 <h3>Is stamped concrete slippery when wet?</h3>
 
-<p>It can be, but the right finish solves this. We use textured stamps and can add a slip-resistant additive to the sealer, which is important for pool decks and shaded patios that stay damp. Letting us know how the space will be used helps us choose the safest finish.</p>
+<p>It can be, but the right finish solves this. We use textured stamps and can add <a href="https://ascconline.org/Portals/ASCC/DCC_Sealer_Guide_Trifold_2012.pdf">a slip-resistant additive</a> to the sealer, which is important for pool decks and shaded patios that stay damp. Letting us know how the space will be used helps us choose the safest finish.</p>
 
 <h3>Does stamped concrete crack?</h3>
 
-<p>All concrete can develop hairline cracks as it cures and the ground moves. Proper subbase prep, reinforcement, and control joints minimize this and keep any cracking controlled and inconspicuous. Experienced placement is the biggest factor in a slab that ages well.</p>
+<p><a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">All concrete can develop hairline cracks</a> as it cures and the ground moves. Proper subbase prep, reinforcement, and control joints minimize this and keep any cracking controlled and inconspicuous. Experienced placement is the biggest factor in a slab that ages well.</p>
 
 <h3>Can you stamp over an existing patio?</h3>
 
@@ -103,11 +103,11 @@ hero: "deck-patio.jpg"
 
 <h3>How long before I can use my new patio?</h3>
 
-<p>You can usually walk on it within a couple of days, but you should keep heavy furniture and vehicles off longer while the slab fully cures and the sealer sets. We give every Kapolei client a clear timeline at the end of the job so there are no surprises.</p>
+<p>We tell you when you can walk on it and when furniture and vehicles can go back on. We give every Kapolei client a clear timeline at the end of the job so there are no surprises.</p>
 
 <h3>Do I need a permit for a stamped concrete patio in Kapolei?</h3>
 
-<p>It depends on the size, location, and whether the work ties into existing structures. We are familiar with local requirements and will let you know what your project needs during the estimate, so the job stays compliant from the start.</p>
+<p>A patio cover or any roofed structure <a href="https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/">needs a building permit from DPP</a>, and paved area counts toward the City's <a href="https://www.honolulu.gov/dpp/home/faq/">75 percent lot coverage limit</a>. We check what your project needs during the estimate.</p>
 
 <h2>Ready to upgrade your outdoor space?</h2>
 
