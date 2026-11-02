@@ -14,7 +14,7 @@ hero: "deck-patio.jpg"
 
 <p>Stamped concrete is a single poured slab finished to mimic another material. Instead of setting dozens of individual stones or pavers, the crew pours one continuous patio, adds color, and presses patterned stamps into the surface before it cures. The result reads like flagstone, slate, wood plank, or tile, but behaves like a monolithic concrete pad.</p>
 
-<p>That difference matters in Hawaii. A stamped slab has <a href="https://www.nrmca.org/wp-content/uploads/2021/01/06pr.pdf">far fewer joints than pavers</a> and no loose pieces to shift or wash out. It is one of the reasons stamped work has become a go-to for patios, lanai extensions, and pool decks on the west side.</p>
+<p>That difference matters in Hawaii. A stamped slab has <a href="https://www.nrmca.org/wp-content/uploads/2021/01/06pr.pdf">far fewer joints</a> than <a href="https://www.cmha.org/resource/pav-faq-002/">pavers</a> and no loose pieces to shift or wash out. It is one of the reasons stamped work has become a go-to for patios, lanai extensions, and pool decks on the west side.</p>
 
 <h3>How the color and texture come together</h3>
 

@@ -48,7 +48,7 @@ hero: "driveway-paver.jpg"
 
 <h2>Frequently Asked Questions</h2>
 <h3>How long does a concrete driveway last on Oahu?</h3>
-<p>A properly installed concrete driveway <a href="https://www.nachi.org/life-expectancy.htm">can last for decades</a>. How long depends on the base, drainage, installation and care. Most early cracking <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">traces back to how the slab was built</a>, such as a poorly prepared base, rather than the concrete itself.</p>
+<p>A properly installed concrete driveway <a href="https://irmca.org/resource/homeowners/profile/driveways">can last for decades</a>. How long depends on the base, drainage, installation and care. Most early cracking <a href="https://www.nrmca.org/wp-content/uploads/2021/01/04pr.pdf">traces back to how the slab was built</a>, such as a poorly prepared base, rather than the concrete itself.</p>
 <h3>Can you replace just part of a driveway?</h3>
 <p>Sometimes. If the damage is limited to one section and the rest of the slab and base are sound, a partial replacement can work. When cracking is widespread or the base has failed, a full replacement is more reliable and usually the better value over time.</p>
 <h3>How long does a driveway replacement take?</h3>

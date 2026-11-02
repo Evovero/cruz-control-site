@@ -70,7 +70,7 @@ hero: "driveway-paver.jpg"
 
 <h2>Caring for a New Driveway in Maili</h2>
 
-<p>The first weeks after a pour matter. <a href="https://www.cement.org/learn/concrete-technology/concrete-construction/curing-in-construction">Concrete keeps gaining strength</a> well after it looks finished, so a little care early pays off for years.</p>
+<p>The first weeks after a pour matter. <a href="https://www.cement.org/cement-concrete/applications-of-cement/">Concrete keeps gaining strength</a> well after it looks finished, so a little care early pays off for years.</p>
 
 <ul>
 <li><strong>Wait before driving on it.</strong> We will tell you when the slab is ready for cars based on your pour day conditions.</li>

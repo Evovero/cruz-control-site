@@ -36,7 +36,7 @@ hero: "fresh-slab.jpg"
 <h2>Frequently Asked Questions</h2>
 
 <h3>How long does a concrete slab take to cure in Hawaii's climate?</h3>
-<p>Concrete <a href="https://www.cement.org/learn/concrete-technology/concrete-construction/curing-in-construction">keeps gaining strength for weeks</a> after the pour, so we tell you when the slab is ready for foot traffic, framing or vehicles. We manage the curing process to account for island heat and humidity.</p>
+<p>Concrete <a href="https://www.cement.org/cement-concrete/applications-of-cement/">keeps gaining strength for weeks</a> after the pour, so we tell you when the slab is ready for foot traffic, framing or vehicles. We manage the curing process to account for island heat and humidity.</p>
 
 <h3>Do I need a permit for a slab addition in Makaha?</h3>
 <p>A home addition or ADU <a href="https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/">needs a building permit</a> from the City and County of Honolulu <a href="https://www.honolulu.gov/dpp/home/faq/">Department of Planning and Permitting</a>, and the slab is built to the permitted plans. For a stand alone slab, confirm with DPP before work begins, and we are happy to walk through what a specific project involves during a site visit.</p>
